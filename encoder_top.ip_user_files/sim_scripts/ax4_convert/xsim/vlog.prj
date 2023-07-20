@@ -1,0 +1,6 @@
+verilog xil_defaultlib --include "../../../ipstatic/hdl" \
+"../../../../encoder_top.gen/sources_1/ip/ax4_convert/sim/ax4_convert.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

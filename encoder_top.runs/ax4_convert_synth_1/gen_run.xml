@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="ax4_convert_synth_1" LaunchPart="xczu5ev-sfvc784-2-i" LaunchTime="1689765286">
+  <File Type="PA-TCL" Name="ax4_convert.tcl"/>
+  <File Type="REPORTS-TCL" Name="ax4_convert_reports.tcl"/>
+  <File Type="RDS-RDS" Name="ax4_convert.vds"/>
+  <File Type="RDS-UTIL" Name="ax4_convert_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="ax4_convert_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="ax4_convert.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ax4_convert">
+    <File Path="$PSRCDIR/sources_1/ip/ax4_convert/ax4_convert.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="ax4_convert"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ax4_convert">
+    <File Path="$PSRCDIR/sources_1/ip/ax4_convert/ax4_convert.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="ax4_convert"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

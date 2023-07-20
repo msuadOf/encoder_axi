@@ -1,0 +1,2 @@
+axi_convert_256_64.v,verilog,xil_defaultlib,../../../../encoder_top.gen/sources_1/ip/axi_convert_256_64/sim/axi_convert_256_64.v,incdir="$ref_dir/../../../ipstatic/hdl"incdir="../../../ipstatic/hdl"
+glbl.v,Verilog,xil_defaultlib,glbl.v

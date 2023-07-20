@@ -1,0 +1,297 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date             : Mon Jul 17 17:58:22 2023
+| Host             : DESKTOP-CLUEDBE running 64-bit major release  (build 9200)
+| Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
+| Design           : top
+| Device           : xczu5ev-sfvc784-2-i
+| Design State     : routed
+| Grade            : industrial
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 396.604      |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 393.541      |
+| Device Static (W)        | 3.063        |
+| Effective TJA (C/W)      | 2.3          |
+| Max Ambient (C)          | 0.0          |
+| Junction Temperature (C) | 125.0        |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| CLB Logic                |   179.119 |    47682 |       --- |             --- |
+|   LUT as Logic           |   152.418 |    16934 |    117120 |           14.46 |
+|   Register               |    10.528 |    22272 |    234240 |            9.51 |
+|   LUT as Distributed RAM |     6.545 |      416 |     57600 |            0.72 |
+|   LUT as Shift Register  |     6.523 |      417 |     57600 |            0.72 |
+|   CARRY8                 |     3.102 |      639 |     14640 |            4.36 |
+|   BUFG                   |     0.001 |        2 |        32 |            6.25 |
+|   Others                 |     0.000 |      450 |       --- |             --- |
+|   F7/F8 Muxes            |     0.000 |     1847 |    117120 |            1.58 |
+| Signals                  |   192.403 |    37503 |       --- |             --- |
+| Block RAM                |     3.229 |       81 |       144 |           56.25 |
+| I/O                      |    18.790 |      137 |       252 |           54.37 |
+| Static Power             |     3.063 |          |           |                 |
+| Total                    |   396.604 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Source          | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
++-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Vccint          |       0.850 |   443.115 |     440.723 |      2.393 |       NA    | Unspecified | NA         |
+| Vccint_io       |       0.850 |     1.188 |       1.068 |      0.120 |       NA    | Unspecified | NA         |
+| Vccbram         |       0.850 |     0.204 |       0.171 |      0.033 |       NA    | Unspecified | NA         |
+| Vccaux          |       1.800 |     0.187 |       0.000 |      0.187 |       NA    | Unspecified | NA         |
+| Vccaux_io       |       1.800 |     2.192 |       2.160 |      0.032 |       NA    | Unspecified | NA         |
+| Vcco33          |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco25          |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco18          |       1.800 |     7.770 |       7.770 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco15          |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco135         |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco12          |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco10          |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccadc          |       1.800 |     0.008 |       0.000 |      0.008 |       NA    | Unspecified | NA         |
+| VCC_PSINTFP     |       0.850 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCC_PSINTLP     |       0.850 |     0.089 |       0.000 |      0.089 |       NA    | Unspecified | NA         |
+| VPS_MGTRAVCC    |       0.850 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCC_PSINTFP_DDR |       0.850 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCC_PSPLL       |       1.200 |     0.002 |       0.000 |      0.002 |       NA    | Unspecified | NA         |
+| VPS_MGTRAVTT    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCCO_PSDDR_504  |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCC_PSAUX       |       1.800 |     0.002 |       0.000 |      0.002 |       NA    | Unspecified | NA         |
+| VCC_PSBATT      |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCC_PSDDR_PLL   |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCCO_PSIO0_500  |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCCO_PSIO1_501  |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCCO_PSIO2_502  |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCCO_PSIO3_503  |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCC_PSADC       |       1.800 |     0.002 |       0.000 |      0.002 |       NA    | Unspecified | NA         |
+| VCCINT_VCU      |       0.900 |     0.452 |       0.000 |      0.452 |       NA    | Unspecified | NA         |
+| MGTAVcc         |       0.900 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTAVtt         |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTVccaux       |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
++-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+* The Vccint supply current exceeds the maximum limit of the selected package.  See the packaging and pinout user guide for limit values.
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 2.3                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 5.5                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++---------------------------------------+-----------+
+| Name                                  | Power (W) |
++---------------------------------------+-----------+
+| top                                   |   393.541 |
+|   back_top                            |     8.614 |
+|     u1_axi_convert_512_64_output      |     4.504 |
+|       inst                            |     4.504 |
+|     u2_axi_convert_256_64_output      |     2.472 |
+|       inst                            |     2.472 |
+|     u3_axi_convert_128_64_output      |     0.694 |
+|       inst                            |     0.694 |
+|   chicun_IBUF[0]_inst                 |     0.009 |
+|   chicun_IBUF[1]_inst                 |     0.023 |
+|   clk_IBUF_inst                       |     0.006 |
+|   encoder                             |   357.224 |
+|     axi_fifo_128_128                  |     0.867 |
+|       U0                              |     0.867 |
+|     axi_fifo_256_256                  |     1.927 |
+|       U0                              |     1.927 |
+|     axi_fifo_512_512                  |     3.608 |
+|       U0                              |     3.608 |
+|     u1_axi_convert_512_32             |     1.859 |
+|       inst                            |     1.859 |
+|     u1_fifo_64_512_out                |     0.339 |
+|       U0                              |     0.339 |
+|     u2_axi_convert_255_32             |     1.033 |
+|       inst                            |     1.033 |
+|     u2_fifo_64_256_out                |     0.181 |
+|       U0                              |     0.181 |
+|     u3_axi_convert128_32              |     0.809 |
+|       inst                            |     0.809 |
+|     u3_fifo_64_128_out                |     0.102 |
+|       U0                              |     0.102 |
+|     u4_encode                         |   346.493 |
+|       gen_regular_lanes[0].u_regular  |     6.698 |
+|       gen_regular_lanes[10].u_regular |    13.547 |
+|       gen_regular_lanes[11].u_regular |    17.063 |
+|       gen_regular_lanes[12].u_regular |    12.526 |
+|       gen_regular_lanes[1].u_regular  |    12.118 |
+|       gen_regular_lanes[2].u_regular  |    13.328 |
+|       gen_regular_lanes[3].u_regular  |    18.068 |
+|       gen_regular_lanes[4].u_regular  |    13.256 |
+|       gen_regular_lanes[5].u_regular  |    13.179 |
+|       gen_regular_lanes[6].u_regular  |    12.724 |
+|       gen_regular_lanes[7].u_regular  |    16.360 |
+|       gen_regular_lanes[8].u_regular  |    12.252 |
+|       gen_regular_lanes[9].u_regular  |    13.874 |
+|       u_run                           |    11.412 |
+|   mode_IBUF[0]_inst                   |     0.094 |
+|   mode_IBUF[1]_inst                   |     0.088 |
+|   s_axis0_tdata_IBUF[0]_inst          |     0.020 |
+|   s_axis0_tdata_IBUF[10]_inst         |     0.019 |
+|   s_axis0_tdata_IBUF[11]_inst         |     0.020 |
+|   s_axis0_tdata_IBUF[12]_inst         |     0.019 |
+|   s_axis0_tdata_IBUF[13]_inst         |     0.019 |
+|   s_axis0_tdata_IBUF[14]_inst         |     0.019 |
+|   s_axis0_tdata_IBUF[15]_inst         |     0.018 |
+|   s_axis0_tdata_IBUF[16]_inst         |     0.018 |
+|   s_axis0_tdata_IBUF[17]_inst         |     0.019 |
+|   s_axis0_tdata_IBUF[18]_inst         |     0.017 |
+|   s_axis0_tdata_IBUF[19]_inst         |     0.018 |
+|   s_axis0_tdata_IBUF[1]_inst          |     0.022 |
+|   s_axis0_tdata_IBUF[20]_inst         |     0.018 |
+|   s_axis0_tdata_IBUF[21]_inst         |     0.018 |
+|   s_axis0_tdata_IBUF[22]_inst         |     0.017 |
+|   s_axis0_tdata_IBUF[23]_inst         |     0.018 |
+|   s_axis0_tdata_IBUF[24]_inst         |     0.018 |
+|   s_axis0_tdata_IBUF[25]_inst         |     0.018 |
+|   s_axis0_tdata_IBUF[26]_inst         |     0.018 |
+|   s_axis0_tdata_IBUF[27]_inst         |     0.019 |
+|   s_axis0_tdata_IBUF[28]_inst         |     0.017 |
+|   s_axis0_tdata_IBUF[29]_inst         |     0.019 |
+|   s_axis0_tdata_IBUF[2]_inst          |     0.020 |
+|   s_axis0_tdata_IBUF[30]_inst         |     0.017 |
+|   s_axis0_tdata_IBUF[31]_inst         |     0.020 |
+|   s_axis0_tdata_IBUF[32]_inst         |     0.019 |
+|   s_axis0_tdata_IBUF[33]_inst         |     0.019 |
+|   s_axis0_tdata_IBUF[34]_inst         |     0.019 |
+|   s_axis0_tdata_IBUF[35]_inst         |     0.022 |
+|   s_axis0_tdata_IBUF[36]_inst         |     0.018 |
+|   s_axis0_tdata_IBUF[37]_inst         |     0.023 |
+|   s_axis0_tdata_IBUF[38]_inst         |     0.019 |
+|   s_axis0_tdata_IBUF[39]_inst         |     0.018 |
+|   s_axis0_tdata_IBUF[3]_inst          |     0.019 |
+|   s_axis0_tdata_IBUF[40]_inst         |     0.019 |
+|   s_axis0_tdata_IBUF[41]_inst         |     0.020 |
+|   s_axis0_tdata_IBUF[42]_inst         |     0.018 |
+|   s_axis0_tdata_IBUF[43]_inst         |     0.018 |
+|   s_axis0_tdata_IBUF[44]_inst         |     0.017 |
+|   s_axis0_tdata_IBUF[45]_inst         |     0.019 |
+|   s_axis0_tdata_IBUF[46]_inst         |     0.018 |
+|   s_axis0_tdata_IBUF[47]_inst         |     0.017 |
+|   s_axis0_tdata_IBUF[48]_inst         |     0.021 |
+|   s_axis0_tdata_IBUF[49]_inst         |     0.021 |
+|   s_axis0_tdata_IBUF[4]_inst          |     0.020 |
+|   s_axis0_tdata_IBUF[50]_inst         |     0.019 |
+|   s_axis0_tdata_IBUF[51]_inst         |     0.016 |
+|   s_axis0_tdata_IBUF[52]_inst         |     0.018 |
+|   s_axis0_tdata_IBUF[53]_inst         |     0.026 |
+|   s_axis0_tdata_IBUF[54]_inst         |     0.020 |
+|   s_axis0_tdata_IBUF[55]_inst         |     0.021 |
+|   s_axis0_tdata_IBUF[56]_inst         |     0.018 |
+|   s_axis0_tdata_IBUF[57]_inst         |     0.018 |
+|   s_axis0_tdata_IBUF[58]_inst         |     0.017 |
+|   s_axis0_tdata_IBUF[59]_inst         |     0.018 |
+|   s_axis0_tdata_IBUF[5]_inst          |     0.019 |
+|   s_axis0_tdata_IBUF[60]_inst         |     0.019 |
+|   s_axis0_tdata_IBUF[61]_inst         |     0.019 |
+|   s_axis0_tdata_IBUF[62]_inst         |     0.019 |
+|   s_axis0_tdata_IBUF[63]_inst         |     0.020 |
+|   s_axis0_tdata_IBUF[6]_inst          |     0.020 |
+|   s_axis0_tdata_IBUF[7]_inst          |     0.019 |
+|   s_axis0_tdata_IBUF[8]_inst          |     0.020 |
+|   s_axis0_tdata_IBUF[9]_inst          |     0.020 |
+|   s_axis0_tvalid_IBUF_inst            |     0.016 |
+|   u1_axi_fifo_512_512                 |     2.962 |
+|     U0                                |     2.962 |
+|       inst_fifo_gen                   |     2.962 |
+|   u1_fifo_64_512                      |     0.344 |
+|     U0                                |     0.344 |
+|       inst_fifo_gen                   |     0.344 |
+|   u2_axi_fifo_256_256                 |     1.692 |
+|     U0                                |     1.692 |
+|       inst_fifo_gen                   |     1.692 |
+|   u2_fifo_64_256                      |     0.184 |
+|     U0                                |     0.184 |
+|       inst_fifo_gen                   |     0.184 |
+|   u3_fifo_128_128                     |     0.774 |
+|     U0                                |     0.774 |
+|       inst_fifo_gen                   |     0.774 |
+|   u3_fifo_64_128                      |     0.112 |
+|     U0                                |     0.112 |
+|       inst_fifo_gen                   |     0.112 |
++---------------------------------------+-----------+
+
+

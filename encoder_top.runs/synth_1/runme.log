@@ -1,0 +1,1062 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xczu5ev-sfvc784-2-i
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu5ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu5ev'
+INFO: [Device 21-403] Loading part xczu5ev-sfvc784-2-i
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5584
+WARNING: [Synth 8-9501] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [E:/Xillinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:4023]
+WARNING: [Synth 8-6901] identifier 's_axis0_tready_2' is used before its declaration [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/top.v:32]
+WARNING: [Synth 8-6901] identifier 's_axis0_tready_3' is used before its declaration [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/top.v:32]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2431.387 ; gain = 320.117
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/top.v:2]
+INFO: [Synth 8-6157] synthesizing module 'fifo_64_512' [D:/fpga/uh_jls/encoder_top/encoder_top.runs/synth_1/.Xil/Vivado-13196-DESKTOP-CLUEDBE/realtime/fifo_64_512_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_64_512' (0#1) [D:/fpga/uh_jls/encoder_top/encoder_top.runs/synth_1/.Xil/Vivado-13196-DESKTOP-CLUEDBE/realtime/fifo_64_512_stub.v:5]
+WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'fifo_64_512' is unconnected for instance 'u1_fifo_64_512' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/top.v:33]
+WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'fifo_64_512' is unconnected for instance 'u1_fifo_64_512' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/top.v:33]
+WARNING: [Synth 8-7023] instance 'u1_fifo_64_512' of module 'fifo_64_512' has 12 connections declared, but only 10 given [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/top.v:33]
+INFO: [Synth 8-6157] synthesizing module 'fifo_64_256' [D:/fpga/uh_jls/encoder_top/encoder_top.runs/synth_1/.Xil/Vivado-13196-DESKTOP-CLUEDBE/realtime/fifo_64_256_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_64_256' (0#1) [D:/fpga/uh_jls/encoder_top/encoder_top.runs/synth_1/.Xil/Vivado-13196-DESKTOP-CLUEDBE/realtime/fifo_64_256_stub.v:5]
+WARNING: [Synth 8-7071] port 'prog_full_thresh' of module 'fifo_64_256' is unconnected for instance 'u2_fifo_64_256' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/top.v:58]
+WARNING: [Synth 8-7071] port 'prog_full' of module 'fifo_64_256' is unconnected for instance 'u2_fifo_64_256' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/top.v:58]
+WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'fifo_64_256' is unconnected for instance 'u2_fifo_64_256' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/top.v:58]
+WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'fifo_64_256' is unconnected for instance 'u2_fifo_64_256' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/top.v:58]
+WARNING: [Synth 8-7023] instance 'u2_fifo_64_256' of module 'fifo_64_256' has 12 connections declared, but only 8 given [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/top.v:58]
+INFO: [Synth 8-6157] synthesizing module 'fifo_64_128' [D:/fpga/uh_jls/encoder_top/encoder_top.runs/synth_1/.Xil/Vivado-13196-DESKTOP-CLUEDBE/realtime/fifo_64_128_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_64_128' (0#1) [D:/fpga/uh_jls/encoder_top/encoder_top.runs/synth_1/.Xil/Vivado-13196-DESKTOP-CLUEDBE/realtime/fifo_64_128_stub.v:5]
+WARNING: [Synth 8-7071] port 'prog_full_thresh' of module 'fifo_64_128' is unconnected for instance 'u3_fifo_64_128' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/top.v:80]
+WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'fifo_64_128' is unconnected for instance 'u3_fifo_64_128' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/top.v:80]
+WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'fifo_64_128' is unconnected for instance 'u3_fifo_64_128' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/top.v:80]
+WARNING: [Synth 8-7023] instance 'u3_fifo_64_128' of module 'fifo_64_128' has 12 connections declared, but only 9 given [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/top.v:80]
+INFO: [Synth 8-6157] synthesizing module 'axi_fifo_512_32' [D:/fpga/uh_jls/encoder_top/encoder_top.runs/synth_1/.Xil/Vivado-13196-DESKTOP-CLUEDBE/realtime/axi_fifo_512_32_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'axi_fifo_512_32' (0#1) [D:/fpga/uh_jls/encoder_top/encoder_top.runs/synth_1/.Xil/Vivado-13196-DESKTOP-CLUEDBE/realtime/axi_fifo_512_32_stub.v:5]
+WARNING: [Synth 8-7071] port 's_axis_tlast' of module 'axi_fifo_512_32' is unconnected for instance 'u1_axi_fifo_512_512' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/top.v:100]
+WARNING: [Synth 8-7071] port 'm_axis_tlast' of module 'axi_fifo_512_32' is unconnected for instance 'u1_axi_fifo_512_512' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/top.v:100]
+WARNING: [Synth 8-7023] instance 'u1_axi_fifo_512_512' of module 'axi_fifo_512_32' has 12 connections declared, but only 10 given [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/top.v:100]
+INFO: [Synth 8-6157] synthesizing module 'fifo_256_256' [D:/fpga/uh_jls/encoder_top/encoder_top.runs/synth_1/.Xil/Vivado-13196-DESKTOP-CLUEDBE/realtime/fifo_256_256_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_256_256' (0#1) [D:/fpga/uh_jls/encoder_top/encoder_top.runs/synth_1/.Xil/Vivado-13196-DESKTOP-CLUEDBE/realtime/fifo_256_256_stub.v:5]
+WARNING: [Synth 8-7071] port 's_axis_tlast' of module 'fifo_256_256' is unconnected for instance 'u2_axi_fifo_256_256' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/top.v:120]
+WARNING: [Synth 8-7071] port 'm_axis_tlast' of module 'fifo_256_256' is unconnected for instance 'u2_axi_fifo_256_256' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/top.v:120]
+WARNING: [Synth 8-7023] instance 'u2_axi_fifo_256_256' of module 'fifo_256_256' has 12 connections declared, but only 10 given [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/top.v:120]
+INFO: [Synth 8-6157] synthesizing module 'fifo_128_128' [D:/fpga/uh_jls/encoder_top/encoder_top.runs/synth_1/.Xil/Vivado-13196-DESKTOP-CLUEDBE/realtime/fifo_128_128_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_128_128' (0#1) [D:/fpga/uh_jls/encoder_top/encoder_top.runs/synth_1/.Xil/Vivado-13196-DESKTOP-CLUEDBE/realtime/fifo_128_128_stub.v:5]
+WARNING: [Synth 8-7071] port 's_axis_tlast' of module 'fifo_128_128' is unconnected for instance 'u3_fifo_128_128' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/top.v:141]
+WARNING: [Synth 8-7071] port 'm_axis_tlast' of module 'fifo_128_128' is unconnected for instance 'u3_fifo_128_128' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/top.v:141]
+WARNING: [Synth 8-7023] instance 'u3_fifo_128_128' of module 'fifo_128_128' has 12 connections declared, but only 10 given [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/top.v:141]
+INFO: [Synth 8-6157] synthesizing module 'encoder' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ax4_convert' [D:/fpga/uh_jls/encoder_top/encoder_top.runs/synth_1/.Xil/Vivado-13196-DESKTOP-CLUEDBE/realtime/ax4_convert_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ax4_convert' (0#1) [D:/fpga/uh_jls/encoder_top/encoder_top.runs/synth_1/.Xil/Vivado-13196-DESKTOP-CLUEDBE/realtime/ax4_convert_stub.v:5]
+WARNING: [Synth 8-7071] port 's_axis_tlast' of module 'ax4_convert' is unconnected for instance 'u1_axi_convert_512_32' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:53]
+WARNING: [Synth 8-7071] port 'm_axis_tlast' of module 'ax4_convert' is unconnected for instance 'u1_axi_convert_512_32' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:53]
+WARNING: [Synth 8-7023] instance 'u1_axi_convert_512_32' of module 'ax4_convert' has 10 connections declared, but only 8 given [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_convert_256_32' [D:/fpga/uh_jls/encoder_top/encoder_top.runs/synth_1/.Xil/Vivado-13196-DESKTOP-CLUEDBE/realtime/axi_convert_256_32_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'axi_convert_256_32' (0#1) [D:/fpga/uh_jls/encoder_top/encoder_top.runs/synth_1/.Xil/Vivado-13196-DESKTOP-CLUEDBE/realtime/axi_convert_256_32_stub.v:5]
+WARNING: [Synth 8-7071] port 's_axis_tlast' of module 'axi_convert_256_32' is unconnected for instance 'u2_axi_convert_255_32' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:73]
+WARNING: [Synth 8-7071] port 'm_axis_tlast' of module 'axi_convert_256_32' is unconnected for instance 'u2_axi_convert_255_32' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:73]
+WARNING: [Synth 8-7023] instance 'u2_axi_convert_255_32' of module 'axi_convert_256_32' has 10 connections declared, but only 8 given [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:73]
+INFO: [Synth 8-6157] synthesizing module 'axi_convert128_32' [D:/fpga/uh_jls/encoder_top/encoder_top.runs/synth_1/.Xil/Vivado-13196-DESKTOP-CLUEDBE/realtime/axi_convert128_32_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'axi_convert128_32' (0#1) [D:/fpga/uh_jls/encoder_top/encoder_top.runs/synth_1/.Xil/Vivado-13196-DESKTOP-CLUEDBE/realtime/axi_convert128_32_stub.v:5]
+WARNING: [Synth 8-7071] port 's_axis_tlast' of module 'axi_convert128_32' is unconnected for instance 'u3_axi_convert128_32' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:92]
+WARNING: [Synth 8-7071] port 'm_axis_tlast' of module 'axi_convert128_32' is unconnected for instance 'u3_axi_convert128_32' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:92]
+WARNING: [Synth 8-7023] instance 'u3_axi_convert128_32' of module 'axi_convert128_32' has 10 connections declared, but only 8 given [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:92]
+INFO: [Synth 8-6157] synthesizing module 'uh_jls' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/uh_jls.v:9]
+INFO: [Synth 8-6157] synthesizing module 'regular' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/regular.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'regular' (0#1) [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/regular.v:12]
+INFO: [Synth 8-6157] synthesizing module 'run' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/run.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'run' (0#1) [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/run.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'uh_jls' (0#1) [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/uh_jls.v:9]
+WARNING: [Synth 8-7071] port 'bianyuan_vld' of module 'uh_jls' is unconnected for instance 'u4_encode' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:114]
+WARNING: [Synth 8-7023] instance 'u4_encode' of module 'uh_jls' has 14 connections declared, but only 13 given [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:114]
+WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'fifo_64_512' is unconnected for instance 'u1_fifo_64_512_out' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:159]
+WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'fifo_64_512' is unconnected for instance 'u1_fifo_64_512_out' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:159]
+WARNING: [Synth 8-7023] instance 'u1_fifo_64_512_out' of module 'fifo_64_512' has 12 connections declared, but only 10 given [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:159]
+WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'fifo_64_256' is unconnected for instance 'u2_fifo_64_256_out' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:173]
+WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'fifo_64_256' is unconnected for instance 'u2_fifo_64_256_out' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:173]
+WARNING: [Synth 8-7023] instance 'u2_fifo_64_256_out' of module 'fifo_64_256' has 12 connections declared, but only 10 given [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:173]
+WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'fifo_64_128' is unconnected for instance 'u3_fifo_64_128_out' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:187]
+WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'fifo_64_128' is unconnected for instance 'u3_fifo_64_128_out' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:187]
+WARNING: [Synth 8-7023] instance 'u3_fifo_64_128_out' of module 'fifo_64_128' has 12 connections declared, but only 10 given [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:187]
+WARNING: [Synth 8-7071] port 's_axis_tlast' of module 'axi_fifo_512_32' is unconnected for instance 'axi_fifo_512_512' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:202]
+WARNING: [Synth 8-7071] port 'm_axis_tlast' of module 'axi_fifo_512_32' is unconnected for instance 'axi_fifo_512_512' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:202]
+WARNING: [Synth 8-7023] instance 'axi_fifo_512_512' of module 'axi_fifo_512_32' has 12 connections declared, but only 10 given [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:202]
+WARNING: [Synth 8-689] width (512) of port connection 's_axis_tdata' does not match port width (256) of module 'fifo_256_256' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:223]
+WARNING: [Synth 8-7071] port 's_axis_tlast' of module 'fifo_256_256' is unconnected for instance 'axi_fifo_256_256' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:216]
+WARNING: [Synth 8-7071] port 'm_axis_tlast' of module 'fifo_256_256' is unconnected for instance 'axi_fifo_256_256' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:216]
+WARNING: [Synth 8-7023] instance 'axi_fifo_256_256' of module 'fifo_256_256' has 12 connections declared, but only 10 given [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:216]
+WARNING: [Synth 8-689] width (512) of port connection 's_axis_tdata' does not match port width (128) of module 'fifo_128_128' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:239]
+WARNING: [Synth 8-7071] port 's_axis_tlast' of module 'fifo_128_128' is unconnected for instance 'axi_fifo_128_128' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:232]
+WARNING: [Synth 8-7071] port 'm_axis_tlast' of module 'fifo_128_128' is unconnected for instance 'axi_fifo_128_128' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:232]
+WARNING: [Synth 8-7023] instance 'axi_fifo_128_128' of module 'fifo_128_128' has 12 connections declared, but only 10 given [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:232]
+INFO: [Synth 8-6155] done synthesizing module 'encoder' (0#1) [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/encoder.v:5]
+INFO: [Synth 8-6157] synthesizing module 'back_top' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/back_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'axi_convert_512_64' [D:/fpga/uh_jls/encoder_top/encoder_top.runs/synth_1/.Xil/Vivado-13196-DESKTOP-CLUEDBE/realtime/axi_convert_512_64_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'axi_convert_512_64' (0#1) [D:/fpga/uh_jls/encoder_top/encoder_top.runs/synth_1/.Xil/Vivado-13196-DESKTOP-CLUEDBE/realtime/axi_convert_512_64_stub.v:5]
+WARNING: [Synth 8-7071] port 's_axis_tlast' of module 'axi_convert_512_64' is unconnected for instance 'u1_axi_convert_512_64_output' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/back_top.v:59]
+WARNING: [Synth 8-7071] port 'm_axis_tlast' of module 'axi_convert_512_64' is unconnected for instance 'u1_axi_convert_512_64_output' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/back_top.v:59]
+WARNING: [Synth 8-7023] instance 'u1_axi_convert_512_64_output' of module 'axi_convert_512_64' has 10 connections declared, but only 8 given [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/back_top.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_convert_256_64' [D:/fpga/uh_jls/encoder_top/encoder_top.runs/synth_1/.Xil/Vivado-13196-DESKTOP-CLUEDBE/realtime/axi_convert_256_64_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'axi_convert_256_64' (0#1) [D:/fpga/uh_jls/encoder_top/encoder_top.runs/synth_1/.Xil/Vivado-13196-DESKTOP-CLUEDBE/realtime/axi_convert_256_64_stub.v:5]
+WARNING: [Synth 8-7071] port 's_axis_tlast' of module 'axi_convert_256_64' is unconnected for instance 'u2_axi_convert_256_64_output' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/back_top.v:76]
+WARNING: [Synth 8-7071] port 'm_axis_tlast' of module 'axi_convert_256_64' is unconnected for instance 'u2_axi_convert_256_64_output' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/back_top.v:76]
+WARNING: [Synth 8-7023] instance 'u2_axi_convert_256_64_output' of module 'axi_convert_256_64' has 10 connections declared, but only 8 given [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/back_top.v:76]
+INFO: [Synth 8-6157] synthesizing module 'axi_convert128_64' [D:/fpga/uh_jls/encoder_top/encoder_top.runs/synth_1/.Xil/Vivado-13196-DESKTOP-CLUEDBE/realtime/axi_convert128_64_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'axi_convert128_64' (0#1) [D:/fpga/uh_jls/encoder_top/encoder_top.runs/synth_1/.Xil/Vivado-13196-DESKTOP-CLUEDBE/realtime/axi_convert128_64_stub.v:5]
+WARNING: [Synth 8-7071] port 's_axis_tlast' of module 'axi_convert128_64' is unconnected for instance 'u3_axi_convert_128_64_output' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/back_top.v:92]
+WARNING: [Synth 8-7071] port 'm_axis_tlast' of module 'axi_convert128_64' is unconnected for instance 'u3_axi_convert_128_64_output' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/back_top.v:92]
+WARNING: [Synth 8-7023] instance 'u3_axi_convert_128_64_output' of module 'axi_convert128_64' has 10 connections declared, but only 8 given [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/back_top.v:92]
+INFO: [Synth 8-6155] done synthesizing module 'back_top' (0#1) [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/back_top.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/top.v:2]
+WARNING: [Synth 8-5856] 3D RAM f_x_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-10225] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  f_x_reg 
+WARNING: [Synth 8-5856] 3D RAM f_px_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-10225] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  f_px_reg 
+WARNING: [Synth 8-5856] 3D RAM f_s_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-10225] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  f_s_reg 
+WARNING: [Synth 8-5856] 3D RAM f_q_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-10225] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  f_q_reg 
+WARNING: [Synth 8-5856] 3D RAM f_g_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-10225] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  f_g_reg 
+WARNING: [Synth 8-5856] 3D RAM f_cb_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-10225] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  f_cb_reg 
+WARNING: [Synth 8-5856] 3D RAM f_cn_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-10225] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  f_cn_reg 
+WARNING: [Synth 8-5856] 3D RAM f_on_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-10225] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  f_on_reg 
+WARNING: [Synth 8-5856] 3D RAM p_g_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-10225] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  p_g_reg 
+WARNING: [Synth 8-5856] 3D RAM p_on_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-10225] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  p_on_reg 
+WARNING: [Synth 8-5856] 3D RAM t_cb_zc_bv_bc_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-10225] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  t_cb_zc_bv_bc_reg 
+WARNING: [Synth 8-6014] Unused sequential element runi_reg was removed.  [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/uh_jls.v:619]
+WARNING: [Synth 8-6014] Unused sequential element rc_reg was removed.  [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/uh_jls.v:678]
+WARNING: [Synth 8-6014] Unused sequential element ri_reg was removed.  [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/uh_jls.v:679]
+WARNING: [Synth 8-6014] Unused sequential element nptr_reg was removed.  [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/uh_jls.v:866]
+WARNING: [Synth 8-6014] Unused sequential element nmax_reg was removed.  [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/uh_jls.v:898]
+WARNING: [Synth 8-6014] Unused sequential element valid_group_reg was removed.  [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/uh_jls.v:941]
+WARNING: [Synth 8-6014] Unused sequential element bbuf_reg was removed.  [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/uh_jls.v:1315]
+WARNING: [Synth 8-6014] Unused sequential element bcnt_reg was removed.  [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/uh_jls.v:1316]
+WARNING: [Synth 8-7137] Register bianyuan_rr_reg in module uh_jls has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/uh_jls.v:1461]
+WARNING: [Synth 8-7129] Port m0_axis_tready in module encoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_tready_pcie in module top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 2784.586 ; gain = 673.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 2802.516 ; gain = 691.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 2802.516 ; gain = 691.246
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.349 . Memory (MB): peak = 2802.516 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/axi_convert128_64/axi_convert128_64/axis_dwidth_converter_0_in_context.xdc] for cell 'back_top/u3_axi_convert_128_64_output'
+Finished Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/axi_convert128_64/axi_convert128_64/axis_dwidth_converter_0_in_context.xdc] for cell 'back_top/u3_axi_convert_128_64_output'
+Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/axi_convert_256_32/axi_convert_256_32/axis_convert_256_32_in_context.xdc] for cell 'encoder/u2_axi_convert_255_32'
+Finished Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/axi_convert_256_32/axi_convert_256_32/axis_convert_256_32_in_context.xdc] for cell 'encoder/u2_axi_convert_255_32'
+Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/fifo_64_512/fifo_64_512/fifo_64_512_in_context.xdc] for cell 'encoder/u1_fifo_64_512_out'
+Finished Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/fifo_64_512/fifo_64_512/fifo_64_512_in_context.xdc] for cell 'encoder/u1_fifo_64_512_out'
+Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/fifo_64_512/fifo_64_512/fifo_64_512_in_context.xdc] for cell 'u1_fifo_64_512'
+Finished Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/fifo_64_512/fifo_64_512/fifo_64_512_in_context.xdc] for cell 'u1_fifo_64_512'
+Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/fifo_64_256/fifo_64_256/fifo_64_256_in_context.xdc] for cell 'encoder/u2_fifo_64_256_out'
+Finished Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/fifo_64_256/fifo_64_256/fifo_64_256_in_context.xdc] for cell 'encoder/u2_fifo_64_256_out'
+Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/fifo_64_256/fifo_64_256/fifo_64_256_in_context.xdc] for cell 'u2_fifo_64_256'
+Finished Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/fifo_64_256/fifo_64_256/fifo_64_256_in_context.xdc] for cell 'u2_fifo_64_256'
+Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/fifo_64_128/fifo_64_128/fifo_64_128_in_context.xdc] for cell 'encoder/u3_fifo_64_128_out'
+Finished Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/fifo_64_128/fifo_64_128/fifo_64_128_in_context.xdc] for cell 'encoder/u3_fifo_64_128_out'
+Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/fifo_64_128/fifo_64_128/fifo_64_128_in_context.xdc] for cell 'u3_fifo_64_128'
+Finished Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/fifo_64_128/fifo_64_128/fifo_64_128_in_context.xdc] for cell 'u3_fifo_64_128'
+Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/axi_fifo_512_32/axi_fifo_512_32/axi_fifo_512_32_in_context.xdc] for cell 'encoder/axi_fifo_512_512'
+Finished Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/axi_fifo_512_32/axi_fifo_512_32/axi_fifo_512_32_in_context.xdc] for cell 'encoder/axi_fifo_512_512'
+Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/axi_fifo_512_32/axi_fifo_512_32/axi_fifo_512_32_in_context.xdc] for cell 'u1_axi_fifo_512_512'
+Finished Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/axi_fifo_512_32/axi_fifo_512_32/axi_fifo_512_32_in_context.xdc] for cell 'u1_axi_fifo_512_512'
+Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/fifo_128_128/fifo_128_128/fifo_128_128_in_context.xdc] for cell 'encoder/axi_fifo_128_128'
+Finished Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/fifo_128_128/fifo_128_128/fifo_128_128_in_context.xdc] for cell 'encoder/axi_fifo_128_128'
+Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/fifo_128_128/fifo_128_128/fifo_128_128_in_context.xdc] for cell 'u3_fifo_128_128'
+Finished Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/fifo_128_128/fifo_128_128/fifo_128_128_in_context.xdc] for cell 'u3_fifo_128_128'
+Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/fifo_256_256/fifo_256_256/fifo_256_256_in_context.xdc] for cell 'encoder/axi_fifo_256_256'
+Finished Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/fifo_256_256/fifo_256_256/fifo_256_256_in_context.xdc] for cell 'encoder/axi_fifo_256_256'
+Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/fifo_256_256/fifo_256_256/fifo_256_256_in_context.xdc] for cell 'u2_axi_fifo_256_256'
+Finished Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/fifo_256_256/fifo_256_256/fifo_256_256_in_context.xdc] for cell 'u2_axi_fifo_256_256'
+Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/ax4_convert/ax4_convert/ax4_convert_in_context.xdc] for cell 'encoder/u1_axi_convert_512_32'
+Finished Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/ax4_convert/ax4_convert/ax4_convert_in_context.xdc] for cell 'encoder/u1_axi_convert_512_32'
+Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/axi_convert128_32/axi_convert128_32/axi_convert128_32_in_context.xdc] for cell 'encoder/u3_axi_convert128_32'
+Finished Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/axi_convert128_32/axi_convert128_32/axi_convert128_32_in_context.xdc] for cell 'encoder/u3_axi_convert128_32'
+Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/axi_convert_512_64/axi_convert_512_64/axi_convert_512_64_in_context.xdc] for cell 'back_top/u1_axi_convert_512_64_output'
+Finished Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/axi_convert_512_64/axi_convert_512_64/axi_convert_512_64_in_context.xdc] for cell 'back_top/u1_axi_convert_512_64_output'
+Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/axi_convert_256_64/axi_convert_256_64/axi_convert_256_64_in_context.xdc] for cell 'back_top/u2_axi_convert_256_64_output'
+Finished Parsing XDC File [d:/fpga/uh_jls/encoder_top/encoder_top.gen/sources_1/ip/axi_convert_256_64/axi_convert_256_64/axi_convert_256_64_in_context.xdc] for cell 'back_top/u2_axi_convert_256_64_output'
+Parsing XDC File [D:/fpga/uh_jls/encoder_top/encoder_top.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/fpga/uh_jls/encoder_top/encoder_top.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2927.883 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.150 . Memory (MB): peak = 2927.883 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:23 . Memory (MB): peak = 2927.883 ; gain = 816.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu5ev-sfvc784-2-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:23 . Memory (MB): peak = 2927.883 ; gain = 816.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for back_top/u3_axi_convert_128_64_output. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for encoder/u2_axi_convert_255_32. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u1_fifo_64_512. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for encoder/u1_fifo_64_512_out. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u2_fifo_64_256. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for encoder/u2_fifo_64_256_out. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u3_fifo_64_128. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for encoder/u3_fifo_64_128_out. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for encoder/axi_fifo_512_512. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u1_axi_fifo_512_512. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for encoder/axi_fifo_128_128. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u3_fifo_128_128. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for encoder/axi_fifo_256_256. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u2_axi_fifo_256_256. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for encoder/u1_axi_convert_512_32. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for encoder/u3_axi_convert128_32. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for back_top/u1_axi_convert_512_64_output. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for back_top/u2_axi_convert_256_64_output. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:23 . Memory (MB): peak = 2927.883 ; gain = 816.613
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6904] The RAM "regular:/Nram_reg" of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "regular:/Bram_reg" of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "regular:/Cram_reg" of size (depth=28 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "regular:/Aram_reg" of size (depth=28 x width=13) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "uh_jls:/linebuffer_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 14 for RAM "uh_jls:/linebuffer_reg"
+WARNING: [Synth 8-327] inferring latch for variable 'o_e_1_reg' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/uh_jls.v:1423]
+WARNING: [Synth 8-327] inferring latch for variable 'm0_axis_tvalid_reg' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/back_top.v:105]
+WARNING: [Synth 8-327] inferring latch for variable 'm0_axis_tdata_reg' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/back_top.v:106]
+WARNING: [Synth 8-327] inferring latch for variable 'm0_axis_tready_r_reg' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/back_top.v:66]
+WARNING: [Synth 8-327] inferring latch for variable 'm1_axis_tready_reg' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/back_top.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'm2_axis_tready_reg' [C:/Users/DELL/Documents/WeChat Files/wxid_uhp3cdxbtbvf22/FileStorage/File/2023-07/axi_fifo_test/axi_fifo_test/axi_fifo_test.srcs/sources_1/new/back_top.v:99]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:31 . Memory (MB): peak = 2927.883 ; gain = 816.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   14 Bit       Adders := 5     
+	   2 Input   13 Bit       Adders := 14    
+	   2 Input   11 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 55    
+	   3 Input   10 Bit       Adders := 79    
+	   4 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 109   
+	   3 Input    9 Bit       Adders := 26    
+	   3 Input    8 Bit       Adders := 41    
+	   2 Input    8 Bit       Adders := 26    
+	   4 Input    8 Bit       Adders := 4     
+	   2 Input    7 Bit       Adders := 41    
+	   2 Input    6 Bit       Adders := 10    
+	   3 Input    6 Bit       Adders := 4     
+	   2 Input    5 Bit       Adders := 73    
+	  16 Input    5 Bit       Adders := 16    
+	   4 Input    5 Bit       Adders := 1     
+	   3 Input    5 Bit       Adders := 1     
+	  13 Input    4 Bit       Adders := 14    
+	   2 Input    4 Bit       Adders := 3     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	              408 Bit    Registers := 1     
+	              185 Bit    Registers := 1     
+	               64 Bit    Registers := 2     
+	               37 Bit    Registers := 4     
+	               32 Bit    Registers := 129   
+	               20 Bit    Registers := 16    
+	               14 Bit    Registers := 170   
+	               13 Bit    Registers := 28    
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 29    
+	                9 Bit    Registers := 224   
+	                8 Bit    Registers := 391   
+	                7 Bit    Registers := 148   
+	                6 Bit    Registers := 7     
+	                5 Bit    Registers := 319   
+	                4 Bit    Registers := 575   
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 14    
+	                1 Bit    Registers := 960   
++---RAMs : 
+	              64K Bit	(2048 X 32 bit)          RAMs := 1     
+	              364 Bit	(28 X 13 bit)          RAMs := 13    
+	              224 Bit	(28 X 8 bit)          RAMs := 13    
+	              196 Bit	(28 X 7 bit)          RAMs := 26    
++---Muxes : 
+	   2 Input  408 Bit        Muxes := 2     
+	   2 Input   64 Bit        Muxes := 5     
+	   4 Input   64 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 290   
+	   2 Input   20 Bit        Muxes := 15    
+	   2 Input   16 Bit        Muxes := 15    
+	   3 Input   16 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 10    
+	  32 Input   14 Bit        Muxes := 4     
+	   2 Input   13 Bit        Muxes := 28    
+	   2 Input   11 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 212   
+	   2 Input    9 Bit        Muxes := 136   
+	   3 Input    9 Bit        Muxes := 13    
+	   2 Input    8 Bit        Muxes := 115   
+	   2 Input    7 Bit        Muxes := 107   
+	   2 Input    6 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 178   
+	  17 Input    5 Bit        Muxes := 14    
+	   6 Input    5 Bit        Muxes := 4     
+	   2 Input    4 Bit        Muxes := 53    
+	   4 Input    4 Bit        Muxes := 9     
+	   6 Input    4 Bit        Muxes := 4     
+	   2 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 13    
+	   2 Input    2 Bit        Muxes := 31    
+	   3 Input    1 Bit        Muxes := 17    
+	   2 Input    1 Bit        Muxes := 108   
+	   5 Input    1 Bit        Muxes := 32    
+	   4 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6904] The RAM "u4_encodei_2/\gen_regular_lanes[9].u_regular /Nram_reg" of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "u4_encodei_2/\gen_regular_lanes[9].u_regular /Cram_reg" of size (depth=28 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "u4_encodei_2/\gen_regular_lanes[9].u_regular /Bram_reg" of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "u4_encodei_2/\gen_regular_lanes[9].u_regular /Aram_reg" of size (depth=28 x width=13) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "u4_encodei_2/\gen_regular_lanes[7].u_regular /Nram_reg" of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "u4_encodei_2/\gen_regular_lanes[7].u_regular /Cram_reg" of size (depth=28 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "u4_encodei_2/\gen_regular_lanes[7].u_regular /Bram_reg" of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "u4_encodei_2/\gen_regular_lanes[7].u_regular /Aram_reg" of size (depth=28 x width=13) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+WARNING: [Synth 8-7129] Port m_axis_tready_pcie in module top is either unconnected or has no load
+INFO: [Synth 8-6904] The RAM "top/gen_regular_lanes[9].u_regular/Nram_reg" of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "top/gen_regular_lanes[9].u_regular/Cram_reg" of size (depth=28 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "top/gen_regular_lanes[9].u_regular/Bram_reg" of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "top/gen_regular_lanes[9].u_regular/Aram_reg" of size (depth=28 x width=13) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "top/gen_regular_lanes[7].u_regular/Nram_reg" of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "top/gen_regular_lanes[7].u_regular/Cram_reg" of size (depth=28 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "top/gen_regular_lanes[7].u_regular/Bram_reg" of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "top/gen_regular_lanes[7].u_regular/Aram_reg" of size (depth=28 x width=13) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[0].u_regular/Nram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[0].u_regular/Cram_reg " of size (depth=28 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[0].u_regular/Bram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[0].u_regular/Aram_reg " of size (depth=28 x width=13) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[4].u_regular/Nram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[4].u_regular/Cram_reg " of size (depth=28 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[4].u_regular/Bram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[4].u_regular/Aram_reg " of size (depth=28 x width=13) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[5].u_regular/Nram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[5].u_regular/Cram_reg " of size (depth=28 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[5].u_regular/Bram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[5].u_regular/Aram_reg " of size (depth=28 x width=13) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[8].u_regular/Nram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[8].u_regular/Cram_reg " of size (depth=28 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[8].u_regular/Bram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[8].u_regular/Aram_reg " of size (depth=28 x width=13) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[0].u_regular/Nram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[0].u_regular/Cram_reg " of size (depth=28 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[0].u_regular/Bram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[0].u_regular/Aram_reg " of size (depth=28 x width=13) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[4].u_regular/Nram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[4].u_regular/Cram_reg " of size (depth=28 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[4].u_regular/Bram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[4].u_regular/Aram_reg " of size (depth=28 x width=13) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[5].u_regular/Nram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[5].u_regular/Cram_reg " of size (depth=28 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[5].u_regular/Bram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[5].u_regular/Aram_reg " of size (depth=28 x width=13) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[8].u_regular/Nram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[8].u_regular/Cram_reg " of size (depth=28 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[8].u_regular/Bram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[8].u_regular/Aram_reg " of size (depth=28 x width=13) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[8].u_regular/b_qh_reg_rep[0]' (FD) to 'gen_regular_lanes[8].u_regular/b_qh_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[8].u_regular/b_qh_reg_rep[1]' (FD) to 'gen_regular_lanes[8].u_regular/b_qh_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[8].u_regular/b_qh_reg_rep[2]' (FD) to 'gen_regular_lanes[8].u_regular/b_qh_reg[2]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[8].u_regular/b_qh_reg_rep[3]' (FD) to 'gen_regular_lanes[8].u_regular/b_qh_reg[3]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[8].u_regular/b_qh_reg_rep[4]' (FD) to 'gen_regular_lanes[8].u_regular/b_qh_reg[4]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[5].u_regular/b_qh_reg_rep[0]' (FD) to 'gen_regular_lanes[5].u_regular/b_qh_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[5].u_regular/b_qh_reg_rep[1]' (FD) to 'gen_regular_lanes[5].u_regular/b_qh_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[5].u_regular/b_qh_reg_rep[2]' (FD) to 'gen_regular_lanes[5].u_regular/b_qh_reg[2]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[5].u_regular/b_qh_reg_rep[3]' (FD) to 'gen_regular_lanes[5].u_regular/b_qh_reg[3]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[5].u_regular/b_qh_reg_rep[4]' (FD) to 'gen_regular_lanes[5].u_regular/b_qh_reg[4]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[4].u_regular/b_qh_reg_rep[0]' (FD) to 'gen_regular_lanes[4].u_regular/b_qh_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[4].u_regular/b_qh_reg_rep[1]' (FD) to 'gen_regular_lanes[4].u_regular/b_qh_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[4].u_regular/b_qh_reg_rep[2]' (FD) to 'gen_regular_lanes[4].u_regular/b_qh_reg[2]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[4].u_regular/b_qh_reg_rep[3]' (FD) to 'gen_regular_lanes[4].u_regular/b_qh_reg[3]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[4].u_regular/b_qh_reg_rep[4]' (FD) to 'gen_regular_lanes[4].u_regular/b_qh_reg[4]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[0].u_regular/b_qh_reg_rep[0]' (FD) to 'gen_regular_lanes[0].u_regular/b_qh_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[0].u_regular/b_qh_reg_rep[1]' (FD) to 'gen_regular_lanes[0].u_regular/b_qh_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[0].u_regular/b_qh_reg_rep[2]' (FD) to 'gen_regular_lanes[0].u_regular/b_qh_reg[2]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[0].u_regular/b_qh_reg_rep[3]' (FD) to 'gen_regular_lanes[0].u_regular/b_qh_reg[3]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[0].u_regular/b_qh_reg_rep[4]' (FD) to 'gen_regular_lanes[0].u_regular/b_qh_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_run/b_err_reg[8]' (FD) to 'u_run/b_err_reg[9]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[8].u_regular/f_qh_reg_rep[0]' (FD) to 'gen_regular_lanes[8].u_regular/f_qh_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[8].u_regular/f_qh_reg_rep[1]' (FD) to 'gen_regular_lanes[8].u_regular/f_qh_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[8].u_regular/f_qh_reg_rep[2]' (FD) to 'gen_regular_lanes[8].u_regular/f_qh_reg[2]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[8].u_regular/f_qh_reg_rep[3]' (FD) to 'gen_regular_lanes[8].u_regular/f_qh_reg[3]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[8].u_regular/f_qh_reg_rep[4]' (FD) to 'gen_regular_lanes[8].u_regular/f_qh_reg[4]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[5].u_regular/f_qh_reg_rep[0]' (FD) to 'gen_regular_lanes[5].u_regular/f_qh_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[5].u_regular/f_qh_reg_rep[1]' (FD) to 'gen_regular_lanes[5].u_regular/f_qh_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[5].u_regular/f_qh_reg_rep[2]' (FD) to 'gen_regular_lanes[5].u_regular/f_qh_reg[2]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[5].u_regular/f_qh_reg_rep[3]' (FD) to 'gen_regular_lanes[5].u_regular/f_qh_reg[3]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[5].u_regular/f_qh_reg_rep[4]' (FD) to 'gen_regular_lanes[5].u_regular/f_qh_reg[4]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[4].u_regular/f_qh_reg_rep[0]' (FD) to 'gen_regular_lanes[4].u_regular/f_qh_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[4].u_regular/f_qh_reg_rep[1]' (FD) to 'gen_regular_lanes[4].u_regular/f_qh_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[4].u_regular/f_qh_reg_rep[2]' (FD) to 'gen_regular_lanes[4].u_regular/f_qh_reg[2]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[4].u_regular/f_qh_reg_rep[3]' (FD) to 'gen_regular_lanes[4].u_regular/f_qh_reg[3]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[4].u_regular/f_qh_reg_rep[4]' (FD) to 'gen_regular_lanes[4].u_regular/f_qh_reg[4]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[0].u_regular/f_qh_reg_rep[0]' (FD) to 'gen_regular_lanes[0].u_regular/f_qh_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[0].u_regular/f_qh_reg_rep[1]' (FD) to 'gen_regular_lanes[0].u_regular/f_qh_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[0].u_regular/f_qh_reg_rep[2]' (FD) to 'gen_regular_lanes[0].u_regular/f_qh_reg[2]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[0].u_regular/f_qh_reg_rep[3]' (FD) to 'gen_regular_lanes[0].u_regular/f_qh_reg[3]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[0].u_regular/f_qh_reg_rep[4]' (FD) to 'gen_regular_lanes[0].u_regular/f_qh_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_run/c_err_reg[8]' (FD) to 'u_run/c_err_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_run/\d_abserr_reg[8] )
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[6].u_regular/Nram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[6].u_regular/Cram_reg " of size (depth=28 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[6].u_regular/Bram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[6].u_regular/Aram_reg " of size (depth=28 x width=13) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[3].u_regular/Nram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[3].u_regular/Cram_reg " of size (depth=28 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[3].u_regular/Bram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[3].u_regular/Aram_reg " of size (depth=28 x width=13) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[2].u_regular/Nram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[2].u_regular/Cram_reg " of size (depth=28 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[2].u_regular/Bram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[2].u_regular/Aram_reg " of size (depth=28 x width=13) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[6].u_regular/Nram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[6].u_regular/Cram_reg " of size (depth=28 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[6].u_regular/Bram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[6].u_regular/Aram_reg " of size (depth=28 x width=13) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[3].u_regular/Nram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[3].u_regular/Cram_reg " of size (depth=28 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[3].u_regular/Bram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[3].u_regular/Aram_reg " of size (depth=28 x width=13) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[2].u_regular/Nram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[2].u_regular/Cram_reg " of size (depth=28 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[2].u_regular/Bram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[2].u_regular/Aram_reg " of size (depth=28 x width=13) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[2].u_regular/b_qh_reg_rep[0]' (FD) to 'gen_regular_lanes[2].u_regular/b_qh_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[2].u_regular/b_qh_reg_rep[1]' (FD) to 'gen_regular_lanes[2].u_regular/b_qh_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[2].u_regular/b_qh_reg_rep[2]' (FD) to 'gen_regular_lanes[2].u_regular/b_qh_reg[2]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[2].u_regular/b_qh_reg_rep[3]' (FD) to 'gen_regular_lanes[2].u_regular/b_qh_reg[3]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[2].u_regular/b_qh_reg_rep[4]' (FD) to 'gen_regular_lanes[2].u_regular/b_qh_reg[4]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[3].u_regular/b_qh_reg_rep[0]' (FD) to 'gen_regular_lanes[3].u_regular/b_qh_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[3].u_regular/b_qh_reg_rep[1]' (FD) to 'gen_regular_lanes[3].u_regular/b_qh_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[3].u_regular/b_qh_reg_rep[2]' (FD) to 'gen_regular_lanes[3].u_regular/b_qh_reg[2]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[3].u_regular/b_qh_reg_rep[3]' (FD) to 'gen_regular_lanes[3].u_regular/b_qh_reg[3]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[3].u_regular/b_qh_reg_rep[4]' (FD) to 'gen_regular_lanes[3].u_regular/b_qh_reg[4]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[6].u_regular/b_qh_reg_rep[0]' (FD) to 'gen_regular_lanes[6].u_regular/b_qh_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[6].u_regular/b_qh_reg_rep[1]' (FD) to 'gen_regular_lanes[6].u_regular/b_qh_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[6].u_regular/b_qh_reg_rep[2]' (FD) to 'gen_regular_lanes[6].u_regular/b_qh_reg[2]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[6].u_regular/b_qh_reg_rep[3]' (FD) to 'gen_regular_lanes[6].u_regular/b_qh_reg[3]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[6].u_regular/b_qh_reg_rep[4]' (FD) to 'gen_regular_lanes[6].u_regular/b_qh_reg[4]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[2].u_regular/f_qh_reg_rep[0]' (FD) to 'gen_regular_lanes[2].u_regular/f_qh_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[2].u_regular/f_qh_reg_rep[1]' (FD) to 'gen_regular_lanes[2].u_regular/f_qh_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[2].u_regular/f_qh_reg_rep[2]' (FD) to 'gen_regular_lanes[2].u_regular/f_qh_reg[2]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[12].u_regular/Nram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[12].u_regular/Cram_reg " of size (depth=28 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[12].u_regular/Bram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[12].u_regular/Aram_reg " of size (depth=28 x width=13) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[11].u_regular/Nram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[11].u_regular/Cram_reg " of size (depth=28 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[11].u_regular/Bram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[11].u_regular/Aram_reg " of size (depth=28 x width=13) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[10].u_regular/Nram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[10].u_regular/Cram_reg " of size (depth=28 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[10].u_regular/Bram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[10].u_regular/Aram_reg " of size (depth=28 x width=13) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[1].u_regular/Nram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[1].u_regular/Cram_reg " of size (depth=28 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[1].u_regular/Bram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[1].u_regular/Aram_reg " of size (depth=28 x width=13) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[12].u_regular/Nram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[12].u_regular/Cram_reg " of size (depth=28 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[12].u_regular/Bram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[12].u_regular/Aram_reg " of size (depth=28 x width=13) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[11].u_regular/Nram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[11].u_regular/Cram_reg " of size (depth=28 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[11].u_regular/Bram_reg " of size (depth=28 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "\gen_regular_lanes[11].u_regular/Aram_reg " of size (depth=28 x width=13) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Common 17-14] Message 'Synth 8-6904' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[1].u_regular/b_qh_reg_rep[0]' (FD) to 'gen_regular_lanes[1].u_regular/b_qh_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[1].u_regular/b_qh_reg_rep[1]' (FD) to 'gen_regular_lanes[1].u_regular/b_qh_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[1].u_regular/b_qh_reg_rep[2]' (FD) to 'gen_regular_lanes[1].u_regular/b_qh_reg[2]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[1].u_regular/b_qh_reg_rep[3]' (FD) to 'gen_regular_lanes[1].u_regular/b_qh_reg[3]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[1].u_regular/b_qh_reg_rep[4]' (FD) to 'gen_regular_lanes[1].u_regular/b_qh_reg[4]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[10].u_regular/b_qh_reg_rep[0]' (FD) to 'gen_regular_lanes[10].u_regular/b_qh_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[10].u_regular/b_qh_reg_rep[1]' (FD) to 'gen_regular_lanes[10].u_regular/b_qh_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[10].u_regular/b_qh_reg_rep[2]' (FD) to 'gen_regular_lanes[10].u_regular/b_qh_reg[2]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[10].u_regular/b_qh_reg_rep[3]' (FD) to 'gen_regular_lanes[10].u_regular/b_qh_reg[3]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[10].u_regular/b_qh_reg_rep[4]' (FD) to 'gen_regular_lanes[10].u_regular/b_qh_reg[4]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[11].u_regular/b_qh_reg_rep[0]' (FD) to 'gen_regular_lanes[11].u_regular/b_qh_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[11].u_regular/b_qh_reg_rep[1]' (FD) to 'gen_regular_lanes[11].u_regular/b_qh_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[11].u_regular/b_qh_reg_rep[2]' (FD) to 'gen_regular_lanes[11].u_regular/b_qh_reg[2]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[11].u_regular/b_qh_reg_rep[3]' (FD) to 'gen_regular_lanes[11].u_regular/b_qh_reg[3]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[11].u_regular/b_qh_reg_rep[4]' (FD) to 'gen_regular_lanes[11].u_regular/b_qh_reg[4]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[12].u_regular/b_qh_reg_rep[0]' (FD) to 'gen_regular_lanes[12].u_regular/b_qh_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[12].u_regular/b_qh_reg_rep[1]' (FD) to 'gen_regular_lanes[12].u_regular/b_qh_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[12].u_regular/b_qh_reg_rep[2]' (FD) to 'gen_regular_lanes[12].u_regular/b_qh_reg[2]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[12].u_regular/b_qh_reg_rep[3]' (FD) to 'gen_regular_lanes[12].u_regular/b_qh_reg[3]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[12].u_regular/b_qh_reg_rep[4]' (FD) to 'gen_regular_lanes[12].u_regular/b_qh_reg[4]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[1].u_regular/f_qh_reg_rep[0]' (FD) to 'gen_regular_lanes[1].u_regular/f_qh_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[1].u_regular/f_qh_reg_rep[1]' (FD) to 'gen_regular_lanes[1].u_regular/f_qh_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[1].u_regular/f_qh_reg_rep[2]' (FD) to 'gen_regular_lanes[1].u_regular/f_qh_reg[2]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[1].u_regular/f_qh_reg_rep[3]' (FD) to 'gen_regular_lanes[1].u_regular/f_qh_reg[3]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[1].u_regular/f_qh_reg_rep[4]' (FD) to 'gen_regular_lanes[1].u_regular/f_qh_reg[4]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[10].u_regular/f_qh_reg_rep[0]' (FD) to 'gen_regular_lanes[10].u_regular/f_qh_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[10].u_regular/f_qh_reg_rep[1]' (FD) to 'gen_regular_lanes[10].u_regular/f_qh_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[10].u_regular/f_qh_reg_rep[2]' (FD) to 'gen_regular_lanes[10].u_regular/f_qh_reg[2]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[10].u_regular/f_qh_reg_rep[3]' (FD) to 'gen_regular_lanes[10].u_regular/f_qh_reg[3]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[10].u_regular/f_qh_reg_rep[4]' (FD) to 'gen_regular_lanes[10].u_regular/f_qh_reg[4]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[11].u_regular/f_qh_reg_rep[0]' (FD) to 'gen_regular_lanes[11].u_regular/f_qh_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[11].u_regular/f_qh_reg_rep[1]' (FD) to 'gen_regular_lanes[11].u_regular/f_qh_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[11].u_regular/f_qh_reg_rep[2]' (FD) to 'gen_regular_lanes[11].u_regular/f_qh_reg[2]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[11].u_regular/f_qh_reg_rep[3]' (FD) to 'gen_regular_lanes[11].u_regular/f_qh_reg[3]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[11].u_regular/f_qh_reg_rep[4]' (FD) to 'gen_regular_lanes[11].u_regular/f_qh_reg[4]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[12].u_regular/f_qh_reg_rep[0]' (FD) to 'gen_regular_lanes[12].u_regular/f_qh_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[12].u_regular/f_qh_reg_rep[1]' (FD) to 'gen_regular_lanes[12].u_regular/f_qh_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[12].u_regular/f_qh_reg_rep[2]' (FD) to 'gen_regular_lanes[12].u_regular/f_qh_reg[2]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[12].u_regular/f_qh_reg_rep[3]' (FD) to 'gen_regular_lanes[12].u_regular/f_qh_reg[3]'
+INFO: [Synth 8-3886] merging instance 'gen_regular_lanes[12].u_regular/f_qh_reg_rep[4]' (FD) to 'gen_regular_lanes[12].u_regular/f_qh_reg[4]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-7124] RAM ("uh_jls__GB4/linebuffer_reg") is implemented using BRAM instead of URAM. Memory would be severely underutilized if URAMs are used
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 18 for RAM "uh_jls__GB4/linebuffer_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 14 for RAM "uh_jls__GB4/linebuffer_reg"
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\h_bitmap_reg[15][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\h_bitmap_reg[13][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\h_bitmap_reg[11][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\h_bitmap_reg[9][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\h_bitmap_reg[7][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\h_bitmap_reg[5][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\h_bitmap_reg[3][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\h_bitmap_reg[1][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\h_bitmap_reg[1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\h_bitmap_reg[1][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\h_bitmap_reg[1][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\h_bitmap_reg[1][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\h_bitmap_reg[1][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\h_bitmap_reg[1][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\h_bitmap_reg[1][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\h_bitmap_reg[1][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\h_bitmap_reg[1][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\h_bitmap_reg[1][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\h_bitmap_reg[1][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\h_bitmap_reg[1][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\h_bitmap_reg[1][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\h_bitmap_reg[1][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\h_bitmap_reg[0][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\h_bitmap_reg[2][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\h_bitmap_reg[4][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\h_bitmap_reg[6][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\h_bitmap_reg[8][14] )
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\h_bitmap_reg[10][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\h_bitmap_reg[12][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\h_bitmap_reg[14][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\j_nptr_reg[11][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\j_nptr_reg[9][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\j_nptr_reg[7][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\j_nptr_reg[5][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\j_nptr_reg[4][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\j_nptr_reg[3][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\j_nptr_reg[3][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\j_nptr_reg[2][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\j_nptr_reg[2][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\j_nptr_reg[1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\j_nptr_reg[1][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\j_nptr_reg[1][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\j_nptr_reg[1][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\j_nptr_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\j_nptr_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\j_nptr_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\j_nptr_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\j_nptr_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\j_nptr_reg[2][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\j_nptr_reg[4][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\j_nptr_reg[6][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\j_nptr_reg[8][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\j_nptr_reg[10][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\k_nptr_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\k_nptr_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\k_nptr_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\k_nptr_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\k_nptr_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\k_nptr_reg[11][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\k_nptr_reg[10][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\k_nptr_reg[9][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\k_nptr_reg[8][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\k_nptr_reg[7][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\k_nptr_reg[6][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\k_nptr_reg[5][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\k_nptr_reg[4][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\k_nptr_reg[4][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\k_nptr_reg[3][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\k_nptr_reg[3][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\k_nptr_reg[2][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\k_nptr_reg[2][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\k_nptr_reg[2][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\k_nptr_reg[1][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\k_nptr_reg[1][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\k_nptr_reg[1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\k_nptr_reg[1][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\j_nptr_reg[12][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\j_nptr_reg[12][4] )
+INFO: [Synth 8-5546] ROM "J_MASK" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "J_MASK" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "J_MASK" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "J_MASK" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_bb_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_bb_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_bb_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_bb_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_bb_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_bb_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_bb_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_bb_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_bb_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_bb_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_bb_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_bb_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_bb_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_bb_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_bb_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_bb_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_bb_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_bb_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_bb_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_bb_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_bb_reg[0] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:01:46 . Memory (MB): peak = 2927.883 ; gain = 816.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|uh_jls      | J_PLUS     | 32x4          | LUT            | 
+|uh_jls      | J_PLUS     | 32x4          | LUT            | 
+|uh_jls      | J_PLUS     | 32x4          | LUT            | 
+|uh_jls      | J_PLUS     | 32x4          | LUT            | 
++------------+------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name | RTL Object     | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------+----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|uh_jls__GB4 | linebuffer_reg | 2 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 2      | 1,1             | 
++------------+----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++----------------------------------+-----------------------------------------+-----------+----------------------+----------------+
+|Module Name                       | RTL Object                              | Inference | Size (Depth x Width) | Primitives     | 
++----------------------------------+-----------------------------------------+-----------+----------------------+----------------+
+|\gen_regular_lanes[0].u_regular   | Nram_reg                                | Implied   | 32 x 7               | RAM16X1S x 14  | 
+|\gen_regular_lanes[0].u_regular   | Cram_reg                                | Implied   | 32 x 8               | RAM32M16 x 1   | 
+|\gen_regular_lanes[0].u_regular   | Bram_reg                                | Implied   | 32 x 7               | RAM32M16 x 1   | 
+|\gen_regular_lanes[0].u_regular   | Aram_reg                                | Implied   | 32 x 13              | RAM32M16 x 1   | 
+|\gen_regular_lanes[4].u_regular   | Nram_reg                                | Implied   | 32 x 7               | RAM16X1S x 14  | 
+|\gen_regular_lanes[4].u_regular   | Cram_reg                                | Implied   | 32 x 8               | RAM32M16 x 1   | 
+|\gen_regular_lanes[4].u_regular   | Bram_reg                                | Implied   | 32 x 7               | RAM32M16 x 1   | 
+|\gen_regular_lanes[4].u_regular   | Aram_reg                                | Implied   | 32 x 13              | RAM32M16 x 1   | 
+|\gen_regular_lanes[5].u_regular   | Nram_reg                                | Implied   | 32 x 7               | RAM16X1S x 14  | 
+|\gen_regular_lanes[5].u_regular   | Cram_reg                                | Implied   | 32 x 8               | RAM32M16 x 1   | 
+|\gen_regular_lanes[5].u_regular   | Bram_reg                                | Implied   | 32 x 7               | RAM32M16 x 1   | 
+|\gen_regular_lanes[5].u_regular   | Aram_reg                                | Implied   | 32 x 13              | RAM32M16 x 1   | 
+|\gen_regular_lanes[8].u_regular   | Nram_reg                                | Implied   | 32 x 7               | RAM16X1S x 14  | 
+|\gen_regular_lanes[8].u_regular   | Cram_reg                                | Implied   | 32 x 8               | RAM32M16 x 1   | 
+|\gen_regular_lanes[8].u_regular   | Bram_reg                                | Implied   | 32 x 7               | RAM32M16 x 1   | 
+|\gen_regular_lanes[8].u_regular   | Aram_reg                                | Implied   | 32 x 13              | RAM32M16 x 1   | 
+|top                               | gen_regular_lanes[9].u_regular/Nram_reg | Implied   | 32 x 7               | RAM16X1S x 14  | 
+|top                               | gen_regular_lanes[9].u_regular/Cram_reg | Implied   | 32 x 8               | RAM32M16 x 1   | 
+|top                               | gen_regular_lanes[9].u_regular/Bram_reg | Implied   | 32 x 7               | RAM32M16 x 1   | 
+|top                               | gen_regular_lanes[9].u_regular/Aram_reg | Implied   | 32 x 13              | RAM32M16 x 1   | 
+|top                               | gen_regular_lanes[7].u_regular/Nram_reg | Implied   | 32 x 7               | RAM16X1S x 14  | 
+|top                               | gen_regular_lanes[7].u_regular/Cram_reg | Implied   | 32 x 8               | RAM32M16 x 1   | 
+|top                               | gen_regular_lanes[7].u_regular/Bram_reg | Implied   | 32 x 7               | RAM32M16 x 1   | 
+|top                               | gen_regular_lanes[7].u_regular/Aram_reg | Implied   | 32 x 13              | RAM32M16 x 1   | 
+|\gen_regular_lanes[6].u_regular   | Nram_reg                                | Implied   | 32 x 7               | RAM16X1S x 14  | 
+|\gen_regular_lanes[6].u_regular   | Cram_reg                                | Implied   | 32 x 8               | RAM32M16 x 1   | 
+|\gen_regular_lanes[6].u_regular   | Bram_reg                                | Implied   | 32 x 7               | RAM32M16 x 1   | 
+|\gen_regular_lanes[6].u_regular   | Aram_reg                                | Implied   | 32 x 13              | RAM32M16 x 1   | 
+|\gen_regular_lanes[3].u_regular   | Nram_reg                                | Implied   | 32 x 7               | RAM16X1S x 14  | 
+|\gen_regular_lanes[3].u_regular   | Cram_reg                                | Implied   | 32 x 8               | RAM32M16 x 1   | 
+|\gen_regular_lanes[3].u_regular   | Bram_reg                                | Implied   | 32 x 7               | RAM32M16 x 1   | 
+|\gen_regular_lanes[3].u_regular   | Aram_reg                                | Implied   | 32 x 13              | RAM32M16 x 1   | 
+|\gen_regular_lanes[2].u_regular   | Nram_reg                                | Implied   | 32 x 7               | RAM16X1S x 14  | 
+|\gen_regular_lanes[2].u_regular   | Cram_reg                                | Implied   | 32 x 8               | RAM32M16 x 1   | 
+|\gen_regular_lanes[2].u_regular   | Bram_reg                                | Implied   | 32 x 7               | RAM32M16 x 1   | 
+|\gen_regular_lanes[2].u_regular   | Aram_reg                                | Implied   | 32 x 13              | RAM32M16 x 1   | 
+|\gen_regular_lanes[12].u_regular  | Nram_reg                                | Implied   | 32 x 7               | RAM16X1S x 14  | 
+|\gen_regular_lanes[12].u_regular  | Cram_reg                                | Implied   | 32 x 8               | RAM32M16 x 1   | 
+|\gen_regular_lanes[12].u_regular  | Bram_reg                                | Implied   | 32 x 7               | RAM32M16 x 1   | 
+|\gen_regular_lanes[12].u_regular  | Aram_reg                                | Implied   | 32 x 13              | RAM32M16 x 1   | 
+|\gen_regular_lanes[11].u_regular  | Nram_reg                                | Implied   | 32 x 7               | RAM16X1S x 14  | 
+|\gen_regular_lanes[11].u_regular  | Cram_reg                                | Implied   | 32 x 8               | RAM32M16 x 1   | 
+|\gen_regular_lanes[11].u_regular  | Bram_reg                                | Implied   | 32 x 7               | RAM32M16 x 1   | 
+|\gen_regular_lanes[11].u_regular  | Aram_reg                                | Implied   | 32 x 13              | RAM32M16 x 1   | 
+|\gen_regular_lanes[10].u_regular  | Nram_reg                                | Implied   | 32 x 7               | RAM16X1S x 14  | 
+|\gen_regular_lanes[10].u_regular  | Cram_reg                                | Implied   | 32 x 8               | RAM32M16 x 1   | 
+|\gen_regular_lanes[10].u_regular  | Bram_reg                                | Implied   | 32 x 7               | RAM32M16 x 1   | 
+|\gen_regular_lanes[10].u_regular  | Aram_reg                                | Implied   | 32 x 13              | RAM32M16 x 1   | 
+|\gen_regular_lanes[1].u_regular   | Nram_reg                                | Implied   | 32 x 7               | RAM16X1S x 14  | 
+|\gen_regular_lanes[1].u_regular   | Cram_reg                                | Implied   | 32 x 8               | RAM32M16 x 1   | 
+|\gen_regular_lanes[1].u_regular   | Bram_reg                                | Implied   | 32 x 7               | RAM32M16 x 1   | 
+|\gen_regular_lanes[1].u_regular   | Aram_reg                                | Implied   | 32 x 13              | RAM32M16 x 1   | 
++----------------------------------+-----------------------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:01:59 . Memory (MB): peak = 3211.082 ; gain = 1099.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:02:01 . Memory (MB): peak = 3232.523 ; gain = 1121.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name | RTL Object     | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------+----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|uh_jls__GB4 | linebuffer_reg | 2 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 2      | 1,1             | 
++------------+----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+
+Distributed RAM: Final Mapping Report
++----------------------------------+-----------------------------------------+-----------+----------------------+----------------+
+|Module Name                       | RTL Object                              | Inference | Size (Depth x Width) | Primitives     | 
++----------------------------------+-----------------------------------------+-----------+----------------------+----------------+
+|\gen_regular_lanes[0].u_regular   | Nram_reg                                | Implied   | 32 x 7               | RAM16X1S x 14  | 
+|\gen_regular_lanes[0].u_regular   | Cram_reg                                | Implied   | 32 x 8               | RAM32M16 x 1   | 
+|\gen_regular_lanes[0].u_regular   | Bram_reg                                | Implied   | 32 x 7               | RAM32M16 x 1   | 
+|\gen_regular_lanes[0].u_regular   | Aram_reg                                | Implied   | 32 x 13              | RAM32M16 x 1   | 
+|\gen_regular_lanes[4].u_regular   | Nram_reg                                | Implied   | 32 x 7               | RAM16X1S x 14  | 
+|\gen_regular_lanes[4].u_regular   | Cram_reg                                | Implied   | 32 x 8               | RAM32M16 x 1   | 
+|\gen_regular_lanes[4].u_regular   | Bram_reg                                | Implied   | 32 x 7               | RAM32M16 x 1   | 
+|\gen_regular_lanes[4].u_regular   | Aram_reg                                | Implied   | 32 x 13              | RAM32M16 x 1   | 
+|\gen_regular_lanes[5].u_regular   | Nram_reg                                | Implied   | 32 x 7               | RAM16X1S x 14  | 
+|\gen_regular_lanes[5].u_regular   | Cram_reg                                | Implied   | 32 x 8               | RAM32M16 x 1   | 
+|\gen_regular_lanes[5].u_regular   | Bram_reg                                | Implied   | 32 x 7               | RAM32M16 x 1   | 
+|\gen_regular_lanes[5].u_regular   | Aram_reg                                | Implied   | 32 x 13              | RAM32M16 x 1   | 
+|\gen_regular_lanes[8].u_regular   | Nram_reg                                | Implied   | 32 x 7               | RAM16X1S x 14  | 
+|\gen_regular_lanes[8].u_regular   | Cram_reg                                | Implied   | 32 x 8               | RAM32M16 x 1   | 
+|\gen_regular_lanes[8].u_regular   | Bram_reg                                | Implied   | 32 x 7               | RAM32M16 x 1   | 
+|\gen_regular_lanes[8].u_regular   | Aram_reg                                | Implied   | 32 x 13              | RAM32M16 x 1   | 
+|top                               | gen_regular_lanes[9].u_regular/Nram_reg | Implied   | 32 x 7               | RAM16X1S x 14  | 
+|top                               | gen_regular_lanes[9].u_regular/Cram_reg | Implied   | 32 x 8               | RAM32M16 x 1   | 
+|top                               | gen_regular_lanes[9].u_regular/Bram_reg | Implied   | 32 x 7               | RAM32M16 x 1   | 
+|top                               | gen_regular_lanes[9].u_regular/Aram_reg | Implied   | 32 x 13              | RAM32M16 x 1   | 
+|top                               | gen_regular_lanes[7].u_regular/Nram_reg | Implied   | 32 x 7               | RAM16X1S x 14  | 
+|top                               | gen_regular_lanes[7].u_regular/Cram_reg | Implied   | 32 x 8               | RAM32M16 x 1   | 
+|top                               | gen_regular_lanes[7].u_regular/Bram_reg | Implied   | 32 x 7               | RAM32M16 x 1   | 
+|top                               | gen_regular_lanes[7].u_regular/Aram_reg | Implied   | 32 x 13              | RAM32M16 x 1   | 
+|\gen_regular_lanes[6].u_regular   | Nram_reg                                | Implied   | 32 x 7               | RAM16X1S x 14  | 
+|\gen_regular_lanes[6].u_regular   | Cram_reg                                | Implied   | 32 x 8               | RAM32M16 x 1   | 
+|\gen_regular_lanes[6].u_regular   | Bram_reg                                | Implied   | 32 x 7               | RAM32M16 x 1   | 
+|\gen_regular_lanes[6].u_regular   | Aram_reg                                | Implied   | 32 x 13              | RAM32M16 x 1   | 
+|\gen_regular_lanes[3].u_regular   | Nram_reg                                | Implied   | 32 x 7               | RAM16X1S x 14  | 
+|\gen_regular_lanes[3].u_regular   | Cram_reg                                | Implied   | 32 x 8               | RAM32M16 x 1   | 
+|\gen_regular_lanes[3].u_regular   | Bram_reg                                | Implied   | 32 x 7               | RAM32M16 x 1   | 
+|\gen_regular_lanes[3].u_regular   | Aram_reg                                | Implied   | 32 x 13              | RAM32M16 x 1   | 
+|\gen_regular_lanes[2].u_regular   | Nram_reg                                | Implied   | 32 x 7               | RAM16X1S x 14  | 
+|\gen_regular_lanes[2].u_regular   | Cram_reg                                | Implied   | 32 x 8               | RAM32M16 x 1   | 
+|\gen_regular_lanes[2].u_regular   | Bram_reg                                | Implied   | 32 x 7               | RAM32M16 x 1   | 
+|\gen_regular_lanes[2].u_regular   | Aram_reg                                | Implied   | 32 x 13              | RAM32M16 x 1   | 
+|\gen_regular_lanes[12].u_regular  | Nram_reg                                | Implied   | 32 x 7               | RAM16X1S x 14  | 
+|\gen_regular_lanes[12].u_regular  | Cram_reg                                | Implied   | 32 x 8               | RAM32M16 x 1   | 
+|\gen_regular_lanes[12].u_regular  | Bram_reg                                | Implied   | 32 x 7               | RAM32M16 x 1   | 
+|\gen_regular_lanes[12].u_regular  | Aram_reg                                | Implied   | 32 x 13              | RAM32M16 x 1   | 
+|\gen_regular_lanes[11].u_regular  | Nram_reg                                | Implied   | 32 x 7               | RAM16X1S x 14  | 
+|\gen_regular_lanes[11].u_regular  | Cram_reg                                | Implied   | 32 x 8               | RAM32M16 x 1   | 
+|\gen_regular_lanes[11].u_regular  | Bram_reg                                | Implied   | 32 x 7               | RAM32M16 x 1   | 
+|\gen_regular_lanes[11].u_regular  | Aram_reg                                | Implied   | 32 x 13              | RAM32M16 x 1   | 
+|\gen_regular_lanes[10].u_regular  | Nram_reg                                | Implied   | 32 x 7               | RAM16X1S x 14  | 
+|\gen_regular_lanes[10].u_regular  | Cram_reg                                | Implied   | 32 x 8               | RAM32M16 x 1   | 
+|\gen_regular_lanes[10].u_regular  | Bram_reg                                | Implied   | 32 x 7               | RAM32M16 x 1   | 
+|\gen_regular_lanes[10].u_regular  | Aram_reg                                | Implied   | 32 x 13              | RAM32M16 x 1   | 
+|\gen_regular_lanes[1].u_regular   | Nram_reg                                | Implied   | 32 x 7               | RAM16X1S x 14  | 
+|\gen_regular_lanes[1].u_regular   | Cram_reg                                | Implied   | 32 x 8               | RAM32M16 x 1   | 
+|\gen_regular_lanes[1].u_regular   | Bram_reg                                | Implied   | 32 x 7               | RAM32M16 x 1   | 
+|\gen_regular_lanes[1].u_regular   | Aram_reg                                | Implied   | 32 x 13              | RAM32M16 x 1   | 
++----------------------------------+-----------------------------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance u4_encodei_5/encoder/u4_encode/linebuffer_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u4_encodei_5/encoder/u4_encode/linebuffer_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:02:18 . Memory (MB): peak = 3262.754 ; gain = 1151.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance encoder/u4_encode/linebuffer_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance encoder/u4_encode/linebuffer_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \encoder/u1_axi_convert_512_32  has unconnected pin s_axis_tlast
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \encoder/u2_axi_convert_255_32  has unconnected pin s_axis_tlast
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \encoder/u3_axi_convert128_32  has unconnected pin s_axis_tlast
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \encoder/axi_fifo_512_512  has unconnected pin s_axis_tlast
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \encoder/axi_fifo_256_256  has unconnected pin s_axis_tlast
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \encoder/axi_fifo_128_128  has unconnected pin s_axis_tlast
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \back_top/u1_axi_convert_512_64_output  has unconnected pin s_axis_tlast
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \back_top/u2_axi_convert_256_64_output  has unconnected pin s_axis_tlast
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \back_top/u3_axi_convert_128_64_output  has unconnected pin s_axis_tlast
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u2_fifo_64_256 has unconnected pin prog_full_thresh[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u2_fifo_64_256 has unconnected pin prog_full_thresh[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u2_fifo_64_256 has unconnected pin prog_full_thresh[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u2_fifo_64_256 has unconnected pin prog_full_thresh[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u2_fifo_64_256 has unconnected pin prog_full_thresh[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u2_fifo_64_256 has unconnected pin prog_full_thresh[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u2_fifo_64_256 has unconnected pin prog_full_thresh[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u2_fifo_64_256 has unconnected pin prog_full_thresh[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u2_fifo_64_256 has unconnected pin prog_full_thresh[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u2_fifo_64_256 has unconnected pin prog_full_thresh[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u3_fifo_64_128 has unconnected pin prog_full_thresh[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u3_fifo_64_128 has unconnected pin prog_full_thresh[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u3_fifo_64_128 has unconnected pin prog_full_thresh[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u3_fifo_64_128 has unconnected pin prog_full_thresh[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u3_fifo_64_128 has unconnected pin prog_full_thresh[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u3_fifo_64_128 has unconnected pin prog_full_thresh[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u3_fifo_64_128 has unconnected pin prog_full_thresh[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u3_fifo_64_128 has unconnected pin prog_full_thresh[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u3_fifo_64_128 has unconnected pin prog_full_thresh[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u1_axi_fifo_512_512 has unconnected pin s_axis_tlast
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u2_axi_fifo_256_256 has unconnected pin s_axis_tlast
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u3_fifo_128_128 has unconnected pin s_axis_tlast
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:02:27 . Memory (MB): peak = 3283.078 ; gain = 1171.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:02:27 . Memory (MB): peak = 3283.078 ; gain = 1171.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:02:29 . Memory (MB): peak = 3283.078 ; gain = 1171.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:02:29 . Memory (MB): peak = 3283.078 ; gain = 1171.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:02:30 . Memory (MB): peak = 3283.078 ; gain = 1171.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:02:30 . Memory (MB): peak = 3283.078 ; gain = 1171.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                     | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top         | encoder/u4_encode/gen_regular_lanes[0].u_regular/g_col_a_reg | 3      | 273   | NO           | NO                 | YES               | 273    | 0       | 
+|top         | encoder/u4_encode/gen_regular_lanes[0].u_regular/h_2BgeN_reg | 4      | 13    | NO           | NO                 | YES               | 13     | 0       | 
+|top         | encoder/u4_encode/u_run/o_zc_reg[4]                          | 5      | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|top         | encoder/u4_encode/u_run/o_bv_reg[8]                          | 5      | 9     | NO           | NO                 | YES               | 9      | 0       | 
+|top         | encoder/u4_encode/u_run/o_bc_reg[3]                          | 4      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|top         | encoder/u4_encode/p_cn_reg[10][3]                            | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top         | encoder/u4_encode/p_cn_reg[10][2]                            | 6      | 7     | NO           | NO                 | YES               | 7      | 0       | 
+|top         | encoder/u4_encode/p_g_reg[10][7][3]                          | 13     | 64    | NO           | NO                 | YES               | 64     | 0       | 
+|top         | encoder/u4_encode/p_cb_reg[10][13]                           | 12     | 7     | NO           | NO                 | YES               | 7      | 0       | 
+|top         | encoder/u4_encode/p_cb_reg[10][9]                            | 12     | 7     | NO           | YES                | YES               | 7      | 0       | 
+|top         | encoder/u4_encode/u_run/o_vl_reg                             | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|top         | encoder/u4_encode/r_on_reg[14]                               | 15     | 16    | YES          | NO                 | YES               | 16     | 0       | 
+|top         | encoder/u4_encode/r_st_reg                                   | 14     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|top         | encoder/u4_encode/t_eof_reg                                  | 17     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|top         | encoder/u4_encode/s_et_reg                                   | 15     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|top         | encoder/u4_encode/k_e_reg                                    | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|top         | encoder/u4_encode/k_eof_reg                                  | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+--------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------+----------+
+|      |BlackBox name      |Instances |
++------+-------------------+----------+
+|1     |fifo_64_512        |         2|
+|2     |fifo_64_256        |         2|
+|3     |fifo_64_128        |         2|
+|4     |axi_fifo_512_32    |         2|
+|5     |fifo_256_256       |         2|
+|6     |fifo_128_128       |         2|
+|7     |axi_convert_512_64 |         1|
+|8     |axi_convert_256_64 |         1|
+|9     |axi_convert128_64  |         1|
+|10    |ax4_convert        |         1|
+|11    |axi_convert_256_32 |         1|
+|12    |axi_convert128_32  |         1|
++------+-------------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |ax4_convert     |     1|
+|2     |axi_convert128  |     2|
+|4     |axi_convert_256 |     2|
+|6     |axi_convert_512 |     1|
+|7     |axi_fifo_512    |     1|
+|8     |axi_fifo_512_32 |     1|
+|9     |fifo_128        |     1|
+|10    |fifo_128_128    |     1|
+|11    |fifo_256        |     1|
+|12    |fifo_256_256    |     1|
+|13    |fifo_64         |     1|
+|14    |fifo_64_128     |     1|
+|15    |fifo_64         |     1|
+|16    |fifo_64_256     |     1|
+|17    |fifo_64         |     1|
+|18    |fifo_64_512     |     1|
+|19    |BUFG            |     2|
+|20    |CARRY8          |   589|
+|21    |LUT1            |   242|
+|22    |LUT2            |  2649|
+|23    |LUT3            |  3653|
+|24    |LUT4            |  2239|
+|25    |LUT5            |  2823|
+|26    |LUT6            |  7852|
+|27    |MUXF7           |  1159|
+|28    |MUXF8           |   304|
+|29    |RAM16X1S        |   182|
+|30    |RAM32M16        |    39|
+|31    |RAMB36E2        |     2|
+|32    |SRL16E          |   412|
+|33    |FDCE            |    13|
+|34    |FDRE            | 17043|
+|35    |FDSE            |   382|
+|36    |LD              |    66|
+|37    |IBUF            |    71|
+|38    |OBUF            |    66|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:02:30 . Memory (MB): peak = 3283.078 ; gain = 1171.809
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 31 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:02:29 . Memory (MB): peak = 3283.078 ; gain = 1046.441
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:02:35 . Memory (MB): peak = 3283.078 ; gain = 1171.809
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.346 . Memory (MB): peak = 3298.641 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2412 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 3335.188 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 360 instances were transformed.
+  BUFG => BUFGCE: 2 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 71 instances
+  LD => LDCE: 66 instances
+  RAM16X1S => RAM32X1S (RAMS32): 182 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 39 instances
+
+Synth Design complete, checksum: cfb7c077
+INFO: [Common 17-83] Releasing license: Synthesis
+369 Infos, 104 Warnings, 31 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:03:00 . Memory (MB): peak = 3335.188 ; gain = 1368.691
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'D:/fpga/uh_jls/encoder_top/encoder_top.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 17 17:53:26 2023...

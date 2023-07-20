@@ -1,0 +1,358 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Jul 19 19:14:52 2023
+# Process ID: 15364
+# Current directory: E:/2022jcs/area_competition/encoder_top/encoder_top.runs/axi_convert_256_32_synth_1
+# Command line: vivado.exe -log axi_convert_256_32.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source axi_convert_256_32.tcl
+# Log file: E:/2022jcs/area_competition/encoder_top/encoder_top.runs/axi_convert_256_32_synth_1/axi_convert_256_32.vds
+# Journal file: E:/2022jcs/area_competition/encoder_top/encoder_top.runs/axi_convert_256_32_synth_1\vivado.jou
+# Running On: Lsuad, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 15945 MB
+#-----------------------------------------------------------
+source axi_convert_256_32.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1004.148 ; gain = 119.352
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: axi_convert_256_32
+Command: synth_design -top axi_convert_256_32 -part xczu5ev-sfvc784-2-i -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu5ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu5ev'
+INFO: [Device 21-403] Loading part xczu5ev-sfvc784-2-i
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2932
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Program/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 2382.918 ; gain = 332.227
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'axi_convert_256_32' [e:/2022jcs/area_competition/encoder_top/encoder_top.gen/sources_1/ip/axi_convert_256_32/synth/axi_convert_256_32.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axis_dwidth_converter_v1_1_26_axis_dwidth_converter' [e:/2022jcs/area_competition/encoder_top/encoder_top.gen/sources_1/ip/axi_convert_256_32/hdl/axis_dwidth_converter_v1_1_vl_rfs.v:809]
+INFO: [Synth 8-6157] synthesizing module 'axis_dwidth_converter_v1_1_26_axisc_downsizer' [e:/2022jcs/area_competition/encoder_top/encoder_top.gen/sources_1/ip/axi_convert_256_32/hdl/axis_dwidth_converter_v1_1_vl_rfs.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'axis_dwidth_converter_v1_1_26_axisc_downsizer' (0#1) [e:/2022jcs/area_competition/encoder_top/encoder_top.gen/sources_1/ip/axi_convert_256_32/hdl/axis_dwidth_converter_v1_1_vl_rfs.v:61]
+INFO: [Synth 8-6157] synthesizing module 'axis_register_slice_v1_1_27_axis_register_slice' [e:/2022jcs/area_competition/encoder_top/encoder_top.gen/sources_1/ip/axi_convert_256_32/hdl/axis_register_slice_v1_1_vl_rfs.v:2837]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' [e:/2022jcs/area_competition/encoder_top/encoder_top.gen/sources_1/ip/axi_convert_256_32/hdl/axis_infrastructure_v1_1_vl_rfs.v:809]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' (0#1) [e:/2022jcs/area_competition/encoder_top/encoder_top.gen/sources_1/ip/axi_convert_256_32/hdl/axis_infrastructure_v1_1_vl_rfs.v:809]
+INFO: [Synth 8-6157] synthesizing module 'axis_register_slice_v1_1_27_axisc_register_slice' [e:/2022jcs/area_competition/encoder_top/encoder_top.gen/sources_1/ip/axi_convert_256_32/hdl/axis_register_slice_v1_1_vl_rfs.v:1935]
+INFO: [Synth 8-6155] done synthesizing module 'axis_register_slice_v1_1_27_axisc_register_slice' (0#1) [e:/2022jcs/area_competition/encoder_top/encoder_top.gen/sources_1/ip/axi_convert_256_32/hdl/axis_register_slice_v1_1_vl_rfs.v:1935]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' [e:/2022jcs/area_competition/encoder_top/encoder_top.gen/sources_1/ip/axi_convert_256_32/hdl/axis_infrastructure_v1_1_vl_rfs.v:991]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' (0#1) [e:/2022jcs/area_competition/encoder_top/encoder_top.gen/sources_1/ip/axi_convert_256_32/hdl/axis_infrastructure_v1_1_vl_rfs.v:991]
+INFO: [Synth 8-6155] done synthesizing module 'axis_register_slice_v1_1_27_axis_register_slice' (0#1) [e:/2022jcs/area_competition/encoder_top/encoder_top.gen/sources_1/ip/axi_convert_256_32/hdl/axis_register_slice_v1_1_vl_rfs.v:2837]
+INFO: [Synth 8-6157] synthesizing module 'axis_register_slice_v1_1_27_axis_register_slice__parameterized0' [e:/2022jcs/area_competition/encoder_top/encoder_top.gen/sources_1/ip/axi_convert_256_32/hdl/axis_register_slice_v1_1_vl_rfs.v:2837]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector__parameterized0' [e:/2022jcs/area_competition/encoder_top/encoder_top.gen/sources_1/ip/axi_convert_256_32/hdl/axis_infrastructure_v1_1_vl_rfs.v:809]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector__parameterized0' (0#1) [e:/2022jcs/area_competition/encoder_top/encoder_top.gen/sources_1/ip/axi_convert_256_32/hdl/axis_infrastructure_v1_1_vl_rfs.v:809]
+INFO: [Synth 8-6157] synthesizing module 'axis_register_slice_v1_1_27_axisc_register_slice__parameterized0' [e:/2022jcs/area_competition/encoder_top/encoder_top.gen/sources_1/ip/axi_convert_256_32/hdl/axis_register_slice_v1_1_vl_rfs.v:1935]
+INFO: [Synth 8-6155] done synthesizing module 'axis_register_slice_v1_1_27_axisc_register_slice__parameterized0' (0#1) [e:/2022jcs/area_competition/encoder_top/encoder_top.gen/sources_1/ip/axi_convert_256_32/hdl/axis_register_slice_v1_1_vl_rfs.v:1935]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis__parameterized0' [e:/2022jcs/area_competition/encoder_top/encoder_top.gen/sources_1/ip/axi_convert_256_32/hdl/axis_infrastructure_v1_1_vl_rfs.v:991]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis__parameterized0' (0#1) [e:/2022jcs/area_competition/encoder_top/encoder_top.gen/sources_1/ip/axi_convert_256_32/hdl/axis_infrastructure_v1_1_vl_rfs.v:991]
+INFO: [Synth 8-6155] done synthesizing module 'axis_register_slice_v1_1_27_axis_register_slice__parameterized0' (0#1) [e:/2022jcs/area_competition/encoder_top/encoder_top.gen/sources_1/ip/axi_convert_256_32/hdl/axis_register_slice_v1_1_vl_rfs.v:2837]
+INFO: [Synth 8-6155] done synthesizing module 'axis_dwidth_converter_v1_1_26_axis_dwidth_converter' (0#1) [e:/2022jcs/area_competition/encoder_top/encoder_top.gen/sources_1/ip/axi_convert_256_32/hdl/axis_dwidth_converter_v1_1_vl_rfs.v:809]
+INFO: [Synth 8-6155] done synthesizing module 'axi_convert_256_32' (0#1) [e:/2022jcs/area_competition/encoder_top/encoder_top.gen/sources_1/ip/axi_convert_256_32/synth/axi_convert_256_32.v:53]
+WARNING: [Synth 8-7129] Port ACLK in module axis_register_slice_v1_1_27_axisc_register_slice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK2X in module axis_register_slice_v1_1_27_axisc_register_slice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axis_register_slice_v1_1_27_axisc_register_slice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLKEN in module axis_register_slice_v1_1_27_axisc_register_slice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[3] in module axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[2] in module axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[1] in module axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[0] in module axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TID[0] in module axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TDEST[0] in module axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[3] in module axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[2] in module axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[1] in module axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[0] in module axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axis_register_slice_v1_1_27_axisc_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK2X in module axis_register_slice_v1_1_27_axisc_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axis_register_slice_v1_1_27_axisc_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLKEN in module axis_register_slice_v1_1_27_axisc_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[31] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[30] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[29] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[28] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[27] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[26] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[25] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[24] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[23] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[22] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[21] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[20] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[19] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[18] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[17] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[16] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[15] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[14] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[13] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[12] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[11] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[10] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[9] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[8] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[7] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[6] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[5] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[4] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[3] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[2] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[1] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TSTRB[0] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TID[0] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TDEST[0] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[31] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[30] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[29] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[28] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[27] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[26] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[25] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[24] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[23] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[22] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[21] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[20] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[19] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[18] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[17] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[16] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[15] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[14] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[13] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[12] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[11] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[10] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[9] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[8] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[7] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[6] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[5] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[4] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[3] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[2] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[1] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TUSER[0] in module axis_infrastructure_v1_1_0_util_axis2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tkeep[31] in module axis_dwidth_converter_v1_1_26_axis_dwidth_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tkeep[30] in module axis_dwidth_converter_v1_1_26_axis_dwidth_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tkeep[29] in module axis_dwidth_converter_v1_1_26_axis_dwidth_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tkeep[28] in module axis_dwidth_converter_v1_1_26_axis_dwidth_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tkeep[27] in module axis_dwidth_converter_v1_1_26_axis_dwidth_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tkeep[26] in module axis_dwidth_converter_v1_1_26_axis_dwidth_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tkeep[25] in module axis_dwidth_converter_v1_1_26_axis_dwidth_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tkeep[24] in module axis_dwidth_converter_v1_1_26_axis_dwidth_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tkeep[23] in module axis_dwidth_converter_v1_1_26_axis_dwidth_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tkeep[22] in module axis_dwidth_converter_v1_1_26_axis_dwidth_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tkeep[21] in module axis_dwidth_converter_v1_1_26_axis_dwidth_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tkeep[20] in module axis_dwidth_converter_v1_1_26_axis_dwidth_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tkeep[19] in module axis_dwidth_converter_v1_1_26_axis_dwidth_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tkeep[18] in module axis_dwidth_converter_v1_1_26_axis_dwidth_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tkeep[17] in module axis_dwidth_converter_v1_1_26_axis_dwidth_converter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tkeep[16] in module axis_dwidth_converter_v1_1_26_axis_dwidth_converter is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 2481.863 ; gain = 431.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 2499.750 ; gain = 449.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 2499.750 ; gain = 449.059
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 2499.750 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/2022jcs/area_competition/encoder_top/encoder_top.gen/sources_1/ip/axi_convert_256_32/axi_convert_256_32_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2615.031 ; gain = 0.000
+Finished Parsing XDC File [e:/2022jcs/area_competition/encoder_top/encoder_top.gen/sources_1/ip/axi_convert_256_32/axi_convert_256_32_ooc.xdc] for cell 'inst'
+Parsing XDC File [E:/2022jcs/area_competition/encoder_top/encoder_top.runs/axi_convert_256_32_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/2022jcs/area_competition/encoder_top/encoder_top.runs/axi_convert_256_32_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2615.031 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.085 . Memory (MB): peak = 2615.031 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Program/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:42 . Memory (MB): peak = 2615.031 ; gain = 564.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu5ev-sfvc784-2-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:42 . Memory (MB): peak = 2615.031 ; gain = 564.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  E:/2022jcs/area_competition/encoder_top/encoder_top.runs/axi_convert_256_32_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:42 . Memory (MB): peak = 2615.031 ; gain = 564.340
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'state_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:43 . Memory (MB): peak = 2615.031 ; gain = 564.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	              256 Bit    Registers := 1     
+	               32 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   4 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:49 . Memory (MB): peak = 2615.031 ; gain = 564.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:01:13 . Memory (MB): peak = 3045.582 ; gain = 994.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:01:15 . Memory (MB): peak = 3093.473 ; gain = 1042.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:01:15 . Memory (MB): peak = 3093.473 ; gain = 1042.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:01:26 . Memory (MB): peak = 3093.473 ; gain = 1042.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:01:26 . Memory (MB): peak = 3093.473 ; gain = 1042.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:01:27 . Memory (MB): peak = 3093.473 ; gain = 1042.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:01:27 . Memory (MB): peak = 3093.473 ; gain = 1042.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:01:27 . Memory (MB): peak = 3093.473 ; gain = 1042.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:01:27 . Memory (MB): peak = 3093.473 ; gain = 1042.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |     2|
+|2     |LUT2  |     2|
+|3     |LUT3  |     3|
+|4     |LUT4  |     3|
+|5     |LUT5  |     3|
+|6     |LUT6  |   129|
+|7     |MUXF7 |    64|
+|8     |FDRE  |   299|
+|9     |FDSE  |     1|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:01:27 . Memory (MB): peak = 3093.473 ; gain = 1042.781
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 68 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:01:15 . Memory (MB): peak = 3093.473 ; gain = 927.500
+Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:01:27 . Memory (MB): peak = 3093.473 ; gain = 1042.781
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 3102.918 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 64 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3120.805 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: b1d17d23
+INFO: [Common 17-83] Releasing license: Synthesis
+43 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:02:13 . Memory (MB): peak = 3120.805 ; gain = 2044.500
+INFO: [Common 17-1381] The checkpoint 'E:/2022jcs/area_competition/encoder_top/encoder_top.runs/axi_convert_256_32_synth_1/axi_convert_256_32.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP axi_convert_256_32, cache-ID = ad100e34beae4a1a
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/2022jcs/area_competition/encoder_top/encoder_top.runs/axi_convert_256_32_synth_1/axi_convert_256_32.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file axi_convert_256_32_utilization_synth.rpt -pb axi_convert_256_32_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 19 19:17:38 2023...

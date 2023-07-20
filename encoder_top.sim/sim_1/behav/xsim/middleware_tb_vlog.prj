@@ -1,0 +1,28 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../encoder_top.ip_user_files/ipstatic/hdl" \
+"../../../../encoder_top.gen/sources_1/ip/axi_convert128_64/sim/axi_convert128_64.v" \
+"../../../../encoder_top.gen/sources_1/ip/axi_convert_256_64/sim/axi_convert_256_64.v" \
+"../../../../encoder_top.gen/sources_1/ip/axi_convert_512_64/sim/axi_convert_512_64.v" \
+"../../../../encoder_top.gen/sources_1/ip/fifo_128_128/sim/fifo_128_128.v" \
+"../../../../encoder_top.gen/sources_1/ip/fifo_256_256/sim/fifo_256_256.v" \
+"../../../../encoder_top.gen/sources_1/ip/axi_fifo_512_32/sim/axi_fifo_512_32.v" \
+"../../../../encoder_top.gen/sources_1/ip/fifo_64_128/sim/fifo_64_128.v" \
+"../../../../encoder_top.gen/sources_1/ip/fifo_64_256/sim/fifo_64_256.v" \
+"../../../../encoder_top.gen/sources_1/ip/fifo_64_512/sim/fifo_64_512.v" \
+"../../../../encoder_top.gen/sources_1/ip/axi_convert128_32/sim/axi_convert128_32.v" \
+"../../../../encoder_top.gen/sources_1/ip/axi_convert_256_32/sim/axi_convert_256_32.v" \
+"../../../../encoder_top.gen/sources_1/ip/ax4_convert/sim/ax4_convert.v" \
+"../../../../encoder_top.srcs/sources_1/imports/new/back_top.v" \
+"../../../../encoder_top.srcs/sources_1/imports/new/encoder.v" \
+"../../../../encoder_top.srcs/sources_1/new/middleware.v" \
+"../../../../encoder_top.srcs/sources_1/imports/new/regular.v" \
+"../../../../encoder_top.srcs/sources_1/imports/new/run.v" \
+"../../../../encoder_top.srcs/sources_1/imports/new/top.v" \
+"../../../../encoder_top.srcs/sources_1/imports/new/uh_jls.v" \
+"../../../../encoder_top.srcs/sources_1/new/middleware_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

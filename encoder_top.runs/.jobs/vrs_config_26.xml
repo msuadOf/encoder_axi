@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="ax4_convert_synth_1" LaunchDir="E:/2022jcs/area_competition/encoder_top/encoder_top.runs/ax4_convert_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="axi_convert128_32_synth_1" LaunchDir="E:/2022jcs/area_competition/encoder_top/encoder_top.runs/axi_convert128_32_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="axi_convert128_64_synth_1" LaunchDir="E:/2022jcs/area_competition/encoder_top/encoder_top.runs/axi_convert128_64_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="axi_convert_256_32_synth_1" LaunchDir="E:/2022jcs/area_competition/encoder_top/encoder_top.runs/axi_convert_256_32_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="axi_convert_256_64_synth_1" LaunchDir="E:/2022jcs/area_competition/encoder_top/encoder_top.runs/axi_convert_256_64_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="axi_convert_512_64_synth_1" LaunchDir="E:/2022jcs/area_competition/encoder_top/encoder_top.runs/axi_convert_512_64_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="axi_fifo_512_32_synth_1" LaunchDir="E:/2022jcs/area_competition/encoder_top/encoder_top.runs/axi_fifo_512_32_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_64_128_synth_1" LaunchDir="E:/2022jcs/area_competition/encoder_top/encoder_top.runs/fifo_64_128_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_64_256_synth_1" LaunchDir="E:/2022jcs/area_competition/encoder_top/encoder_top.runs/fifo_64_256_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_64_512_synth_1" LaunchDir="E:/2022jcs/area_competition/encoder_top/encoder_top.runs/fifo_64_512_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_128_128_synth_1" LaunchDir="E:/2022jcs/area_competition/encoder_top/encoder_top.runs/fifo_128_128_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_256_256_synth_1" LaunchDir="E:/2022jcs/area_competition/encoder_top/encoder_top.runs/fifo_256_256_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

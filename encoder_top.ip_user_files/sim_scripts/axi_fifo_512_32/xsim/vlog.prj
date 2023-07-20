@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../encoder_top.gen/sources_1/ip/axi_fifo_512_32/sim/axi_fifo_512_32.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

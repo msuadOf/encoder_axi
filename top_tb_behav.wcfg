@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="middleware_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="middleware_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="8,780.001 ns"></ZoomEndTime>
+      <Cursor1Time time="1,680.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="332"></NameColumnWidth>
+      <ValueColumnWidth column_width="121"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="23" />
+   <wvobject fp_name="/middleware_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/middleware_tb/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/middleware_tb/u_top/encoder/o_num" type="array">
+      <obj_property name="ElementShortName">o_num[9:0]</obj_property>
+      <obj_property name="ObjectShortName">o_num[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/middleware_tb/u_top/encoder/o_e_1" type="logic">
+      <obj_property name="ElementShortName">o_e_1</obj_property>
+      <obj_property name="ObjectShortName">o_e_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/middleware_tb/u_top/encoder/o_data" type="array">
+      <obj_property name="ElementShortName">o_data[63:0]</obj_property>
+      <obj_property name="ObjectShortName">o_data[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/middleware_tb/u_top/m2_axis_tready" type="logic">
+      <obj_property name="ElementShortName">m2_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">m2_axis_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/middleware_tb/u_top/m2_axis_tvalid" type="logic">
+      <obj_property name="ElementShortName">m2_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m2_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/middleware_tb/u_top/m2_axis_tdata" type="array">
+      <obj_property name="ElementShortName">m2_axis_tdata[127:0]</obj_property>
+      <obj_property name="ObjectShortName">m2_axis_tdata[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/middleware_tb/u_top/encoder/u4_encode/i_x" type="array">
+      <obj_property name="ElementShortName">i_x[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_x[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/middleware_tb/u_top/m_axis_tvalid_pcie" type="logic">
+      <obj_property name="ElementShortName">m_axis_tvalid_pcie</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tvalid_pcie</obj_property>
+   </wvobject>
+   <wvobject fp_name="/middleware_tb/u_top/m_axis_tdata_pcie" type="array">
+      <obj_property name="ElementShortName">m_axis_tdata_pcie[63:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tdata_pcie[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/middleware_tb/M_AXIS_TVALID" type="logic">
+      <obj_property name="ElementShortName">M_AXIS_TVALID</obj_property>
+      <obj_property name="ObjectShortName">M_AXIS_TVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/middleware_tb/data" type="array">
+      <obj_property name="ElementShortName">data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/middleware_tb/addr" type="array">
+      <obj_property name="ElementShortName">addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/middleware_tb/M_AXIS_TDATA" type="array">
+      <obj_property name="ElementShortName">M_AXIS_TDATA[63:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXIS_TDATA[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/middleware_tb/M_AXIS_TVALID" type="logic">
+      <obj_property name="ElementShortName">M_AXIS_TVALID</obj_property>
+      <obj_property name="ObjectShortName">M_AXIS_TVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/middleware_tb/M_AXIS_TREADY" type="logic">
+      <obj_property name="ElementShortName">M_AXIS_TREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXIS_TREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/middleware_tb/M_AXIS_TLAST" type="logic">
+      <obj_property name="ElementShortName">M_AXIS_TLAST</obj_property>
+      <obj_property name="ObjectShortName">M_AXIS_TLAST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/middleware_tb/S_AXIS_TDATA" type="array">
+      <obj_property name="ElementShortName">S_AXIS_TDATA[63:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_TDATA[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/middleware_tb/S_AXIS_TVALID" type="logic">
+      <obj_property name="ElementShortName">S_AXIS_TVALID</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_TVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/middleware_tb/S_AXIS_TREADY" type="logic">
+      <obj_property name="ElementShortName">S_AXIS_TREADY</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_TREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/middleware_tb/S_AXIS_TLAST" type="logic">
+      <obj_property name="ElementShortName">S_AXIS_TLAST</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_TLAST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/middleware_tb/TX_Start" type="logic">
+      <obj_property name="ElementShortName">TX_Start</obj_property>
+      <obj_property name="ObjectShortName">TX_Start</obj_property>
+   </wvobject>
+</wave_config>
